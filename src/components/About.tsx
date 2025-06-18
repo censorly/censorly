@@ -1,5 +1,4 @@
 
-
 const About = () => {
   return (
     <section className="py-20 relative bg-black overflow-hidden" id="why-vibesec">
@@ -99,10 +98,22 @@ const About = () => {
             </div>
           </div>
         </div>
+
+        {/* Video Section */}
+        <div className="relative w-full max-w-4xl mx-auto mb-16">
+          <div className="aspect-video w-full rounded-xl overflow-hidden border border-gray-800">
+            <video 
+              src="https://cdn.pixabay.com/video/2024/03/12/203987-923133879_large.mp4"
+              autoPlay 
+              loop 
+              muted 
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
       </div>
     </section>
   );
 };
 
 export default About;
-
