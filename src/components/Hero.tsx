@@ -40,11 +40,6 @@ const Hero = () => {
           🔥 Scan My Code
         </Button>
       </div>
-
-      {/* Floating shiny elements */}
-      <div className="absolute top-20 left-10 w-20 h-20 shine-effect rounded-full animate-pulse shadow-[0_0_20px_rgba(255,255,255,0.2)]"></div>
-      <div className="absolute bottom-20 right-10 w-32 h-32 shine-effect rounded-full animate-pulse shadow-[0_0_30px_rgba(255,255,255,0.2)]"></div>
-      <div className="absolute top-1/2 left-5 w-16 h-16 shine-effect rounded-full animate-pulse shadow-[0_0_25px_rgba(255,255,255,0.2)]"></div>
     </section>
   );
 };
