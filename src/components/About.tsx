@@ -1,4 +1,5 @@
 
+
 const About = () => {
   const logos = [
     { name: "GitHub", src: "/lovable-uploads/e2aee412-68cf-4f14-a910-f5a28455a7ed.png" },
@@ -57,10 +58,10 @@ const About = () => {
                 <img 
                   src={logo.src} 
                   alt={logo.name}
-                  className="max-w-full max-h-full object-contain filter brightness-150 contrast-200 saturate-0 invert"
+                  className="max-w-full max-h-full object-contain filter brightness-0 invert opacity-80"
                   style={{ 
                     background: 'transparent',
-                    mixBlendMode: 'screen'
+                    mixBlendMode: 'normal'
                   }}
                 />
               </div>
@@ -157,3 +158,4 @@ const About = () => {
 };
 
 export default About;
+
