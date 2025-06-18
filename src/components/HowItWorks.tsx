@@ -45,7 +45,7 @@ const HowItWorks = () => {
           <div>
             <div className="inline-flex items-center px-3 py-1 bg-yellow-500/20 rounded-full mb-6">
               <span className="w-2 h-2 bg-yellow-400 rounded-full mr-2"></span>
-              <span className="text-yellow-400 text-sm font-medium">WHY VIBESEC</span>
+              <span className="text-yellow-400 text-sm font-medium">HOW IT WORKS</span>
             </div>
             
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
