@@ -57,15 +57,17 @@ const HowItWorks = () => {
           </div>
         </div>
 
-        {/* How It Works Steps */}
-        <div className="text-center mb-12 max-w-3xl mx-auto">
-          <div className="inline-flex items-center px-3 py-1 bg-yellow-500/20 rounded-full mb-6">
-            <span className="w-2 h-2 bg-yellow-400 rounded-full mr-2"></span>
-            <span className="text-yellow-400 text-sm font-medium">HOW IT WORKS</span>
+        {/* How It Works Section */}
+        <div className="text-center mb-12 max-w-4xl mx-auto">
+          <div className="inline-flex items-center px-4 py-2 bg-black border border-gray-600 rounded-full mb-8">
+            <span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>
+            <span className="text-yellow-400 text-sm font-medium tracking-wide">HOW IT WORKS</span>
           </div>
           
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">How VibeSec Works</h2>
-          <p className="text-xl text-gray-300">
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 text-gray-300">
+            How VibeSec Works
+          </h2>
+          <p className="text-xl text-gray-400 leading-relaxed">
             From repo to report, VibeSec secures your code with AI-powered scanning, detailed reports, 
             and clear next steps. Here's how we help you build safer software fast.
           </p>
