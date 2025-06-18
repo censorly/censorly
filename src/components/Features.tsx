@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 
 const Features = () => {
@@ -81,15 +82,6 @@ const Features = () => {
                   before they reach production. Focus on building amazing features while we handle the 
                   security heavy lifting.
                 </p>
-              </div>
-
-              <div className="mb-8">
-                <Button 
-                  variant="outline" 
-                  className="shine-effect text-white hover:bg-white/10 hover:glow-text transition-all duration-200 shiny-border"
-                >
-                  🚀 Start Your First Scan
-                </Button>
               </div>
 
               <div className="space-y-6">
