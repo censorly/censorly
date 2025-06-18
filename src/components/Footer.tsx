@@ -1,8 +1,22 @@
 
 const Footer = () => {
   return (
-    <footer className="py-16 border-t border-gray-800">
-      <div className="container mx-auto px-6">
+    <footer className="py-16 border-t border-gray-800 relative">
+      {/* Background Image */}
+      <div className="absolute inset-0 overflow-hidden">
+        <img 
+          decoding="async" 
+          width="1234" 
+          height="1184" 
+          sizes="514px" 
+          srcSet="https://framerusercontent.com/images/8m44OJaQZacoxjF34H8lk3UVzUk.png?scale-down-to=512 512w,https://framerusercontent.com/images/8m44OJaQZacoxjF34H8lk3UVzUk.png?scale-down-to=1024 1024w,https://framerusercontent.com/images/8m44OJaQZacoxjF34H8lk3UVzUk.png 1234w" 
+          src="https://framerusercontent.com/images/8m44OJaQZacoxjF34H8lk3UVzUk.png?scale-down-to=1024" 
+          alt="background image" 
+          className="w-full h-full object-cover object-center opacity-20"
+        />
+      </div>
+      
+      <div className="container mx-auto px-6 relative z-10">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div>
             <h3 className="text-white font-semibold mb-4">VibeSec</h3>
