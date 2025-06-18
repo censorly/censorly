@@ -17,7 +17,9 @@ const Features = () => {
               Transformative Solutions{" "}
               <span className="text-gray-400">Across the Spectrum</span>
             </h2>
-            
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <div className="shine-effect rounded-2xl p-6 border border-gray-600">
                 <div className="flex items-center space-x-3 mb-3">
@@ -83,16 +85,12 @@ const Features = () => {
                 </p>
               </div>
             </div>
-          </div>
 
-          <div className="relative">
-            <div className="bg-black rounded-2xl p-8">
-              <div className="aspect-square bg-black rounded-lg flex items-center justify-center relative overflow-hidden">
-                <img 
-                  src="/lovable-uploads/c6733283-1b8b-4d1a-ab8b-58d8018851a4.png" 
-                  alt="Metallic Security Design"
-                  className="w-full h-full object-cover rounded-lg opacity-80 filter brightness-110 contrast-125"
-                />
+            <div className="relative">
+              <div className="bg-black rounded-2xl p-8">
+                <div className="aspect-square bg-black rounded-lg flex items-center justify-center relative overflow-hidden">
+                  <div className="text-8xl opacity-50">✋</div>
+                </div>
               </div>
             </div>
           </div>
