@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 
@@ -45,8 +44,8 @@ const Header = () => {
             <div className="absolute -inset-0.5 rounded-lg overflow-hidden">
               <div className="absolute inset-0 rounded-lg" 
                    style={{
-                     background: 'linear-gradient(90deg, transparent, #fb923c, transparent)',
-                     animation: 'border-spin 3s linear infinite'
+                     background: 'conic-gradient(from 0deg, transparent 70%, #fb923c 85%, transparent 100%)',
+                     animation: 'spin 3s linear infinite'
                    }}>
               </div>
             </div>
@@ -59,13 +58,6 @@ const Header = () => {
           </div>
         </nav>
       </div>
-      
-      <style jsx>{`
-        @keyframes border-spin {
-          0% { transform: rotate(0deg); }
-          100% { transform: rotate(360deg); }
-        }
-      `}</style>
     </header>
   );
 };
