@@ -7,6 +7,7 @@ const About = () => {
     { name: "InVision", src: "/lovable-uploads/31f7d1c8-270b-475d-bf66-43ae0c957233.png" },
     { name: "Apple", src: "/lovable-uploads/60ee3ac3-7840-4f56-96a2-22c6e2aa0371.png" },
     { name: "Polygon", src: "/lovable-uploads/a2e80c6d-ed43-4302-8d87-6bab587fcf79.png" },
+    { name: "X", src: "/lovable-uploads/0b6363cf-db7f-44d0-a674-68adcd572d85.png" },
   ];
 
   return (
@@ -30,12 +31,12 @@ const About = () => {
         </div>
 
         {/* Logo Conveyor System */}
-        <div className="relative mb-16 overflow-hidden">
-          <div className="flex animate-[scroll_60s_linear_infinite] space-x-12 items-center justify-center">
-            {[...logos, ...logos].map((logo, index) => (
+        <div className="relative mb-16 overflow-hidden max-w-4xl mx-auto">
+          <div className="flex animate-[scroll_120s_linear_infinite] gap-16 items-center">
+            {[...logos, ...logos, ...logos].map((logo, index) => (
               <div 
                 key={`${logo.name}-${index}`}
-                className="flex-shrink-0 w-32 h-16 flex items-center justify-center hover:scale-110 transition-transform duration-300"
+                className="flex-shrink-0 w-16 h-16 flex items-center justify-center hover:scale-110 transition-transform duration-300"
               >
                 <img 
                   src={logo.src} 
