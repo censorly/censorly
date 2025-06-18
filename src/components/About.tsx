@@ -1,3 +1,4 @@
+
 const About = () => {
   return (
     <section className="py-20 relative bg-black overflow-hidden" id="why-vibesec">
@@ -26,7 +27,7 @@ const About = () => {
           
           <h2 className="text-4xl md:text-6xl font-bold mb-8 glow-text">
             Building the Future of{" "}
-            <span className="text-gray-400">Secure AI Development</span>
+            <span className="text-white glow-text">Secure AI Development</span>
           </h2>
           
           <p className="text-white text-lg md:text-xl font-bold leading-relaxed max-w-4xl mx-auto mb-16 glow-text">
