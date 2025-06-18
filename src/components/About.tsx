@@ -131,18 +131,19 @@ const About = () => {
           </div>
         </div>
 
-        {/* Spline 3D iframe - seamlessly integrated */}
-        <div className="w-full h-96 -mx-6 overflow-visible">
+        {/* Spline 3D iframe - seamlessly integrated with website background */}
+        <div className="relative w-screen h-96 -mx-6 left-1/2 transform -translate-x-1/2 overflow-visible">
           <iframe 
             src='https://my.spline.design/lightningbulb-Xv8SlaybSvDoERbwo2QRyfJD/' 
             frameBorder='0' 
             width='100%' 
             height='100%'
-            className="w-full h-full pointer-events-none bg-transparent"
+            className="w-full h-full pointer-events-none bg-transparent scale-75"
             style={{ 
               border: 'none',
               background: 'transparent',
-              overflow: 'visible'
+              overflow: 'visible',
+              mixBlendMode: 'normal'
             }}
           />
         </div>
