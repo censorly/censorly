@@ -33,11 +33,10 @@ const Hero = () => {
         </p>
 
         <div className="relative inline-block">
-          <div className="absolute -inset-1 bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 rounded-lg opacity-75 animate-pulse"></div>
-          <div className="absolute -inset-1 bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 rounded-lg opacity-50 animate-spin"></div>
+          <div className="absolute -inset-1 bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 rounded-lg opacity-60 animate-pulse" style={{ animationDuration: '3s' }}></div>
           <Button 
             size="lg" 
-            className="relative bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-8 py-4 text-lg rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl animate-fade-in"
+            className="relative bg-black border border-gray-600 text-white hover:bg-gray-900 px-8 py-4 text-lg rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl animate-fade-in"
           >
             🔥 Scan My Code
           </Button>

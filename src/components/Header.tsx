@@ -42,8 +42,7 @@ const Header = () => {
           </div>
 
           <div className="relative">
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 rounded-lg opacity-75 animate-pulse"></div>
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 rounded-lg opacity-50 animate-spin"></div>
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 rounded-lg opacity-60 animate-pulse" style={{ animationDuration: '3s' }}></div>
             <Button 
               variant="outline" 
               className="relative border-gray-600 text-white hover:bg-white hover:text-black transition-all duration-200 bg-black"
