@@ -76,65 +76,11 @@ const HowItWorks = () => {
           <p 
             className="framer-text framer-styles-preset-1nsqjgg text-xl leading-relaxed font-medium" 
             data-styles-preset="q4wPL8vyB" 
-            style={{"--framer-text-alignment": "center"}}
+            style={{textAlign: "center"} as React.CSSProperties}
           >
             From repo to report, VibeSec secures your code with AI-powered scanning, detailed reports, 
             and clear next steps. Here's how we help you build safer software fast.
           </p>
-        </div>
-
-        {/* Steps with Image */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* GitHub Logo Image */}
-          <div className="flex justify-center">
-            <img 
-              src="/lovable-uploads/1f7aefd4-1a43-404d-8864-714134dd99c9.png" 
-              alt="GitHub"
-              className="w-80 h-80 object-contain"
-            />
-          </div>
-
-          {/* Steps List */}
-          <div className="space-y-8">
-            {/* Step 1 */}
-            <div className="flex items-start gap-6">
-              <div className="w-12 h-12 bg-transparent border border-gray-600 rounded-full flex items-center justify-center flex-shrink-0">
-                <div className="w-3 h-3 bg-white rounded-full"></div>
-              </div>
-              <div className="flex-1">
-                <h3 className="text-2xl font-semibold text-white mb-3">Connect Your Repo</h3>
-                <p className="text-gray-400 text-lg leading-relaxed">
-                  Securely connect your public or private GitHub repository in seconds using a token.
-                </p>
-              </div>
-            </div>
-
-            {/* Step 2 */}
-            <div className="flex items-start gap-6">
-              <div className="w-12 h-12 bg-transparent border border-gray-600 rounded-full flex items-center justify-center flex-shrink-0">
-                <div className="w-3 h-3 bg-white rounded-full"></div>
-              </div>
-              <div className="flex-1">
-                <h3 className="text-2xl font-semibold text-white mb-3">Run an AI-Powered Scan</h3>
-                <p className="text-gray-400 text-lg leading-relaxed">
-                  We analyze your code using static analysis and AI to detect exposed secrets, insecure patterns, and known vulnerabilities.
-                </p>
-              </div>
-            </div>
-
-            {/* Step 3 */}
-            <div className="flex items-start gap-6">
-              <div className="w-12 h-12 bg-transparent border border-gray-600 rounded-full flex items-center justify-center flex-shrink-0">
-                <div className="w-3 h-3 bg-white rounded-full"></div>
-              </div>
-              <div className="flex-1">
-                <h3 className="text-2xl font-semibold text-white mb-3">Get an Instant Report</h3>
-                <p className="text-gray-400 text-lg leading-relaxed">
-                  Download a detailed security report with risk levels and fix instructions — built for developers, not compliance officers.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
