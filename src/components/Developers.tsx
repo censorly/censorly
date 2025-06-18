@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Lock, Zap, Brain, Wrench, MessageCircle, Code } from "lucide-react";
+import { Lock, Zap, Brain, Wrench, Shield, Code } from "lucide-react";
 
 const Developers = () => {
   const features = [
@@ -30,9 +30,9 @@ const Developers = () => {
       description: "Programmatic access to integrate scans into CI",
     },
     {
-      icon: <MessageCircle className="w-8 h-8" />,
-      title: "Dev Community Support", 
-      description: "Join the Discord to get help and give feedback",
+      icon: <Shield className="w-8 h-8" />,
+      title: "Vulnerability Tracking", 
+      description: "Track and monitor security issues across all your projects",
     },
   ];
 
