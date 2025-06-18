@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 
 const HowItWorks = () => {
@@ -31,7 +32,7 @@ const HowItWorks = () => {
                 <img 
                   src="/lovable-uploads/4a14155f-b17a-4c36-b9ea-574374841b43.png" 
                   alt="GitHub Logo"
-                  className="w-32 h-32 object-contain"
+                  className="w-48 h-48 object-contain"
                 />
               </div>
             </div>
