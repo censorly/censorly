@@ -1,3 +1,4 @@
+
 const About = () => {
   const logos = [
     { name: "GitHub", src: "/lovable-uploads/e2aee412-68cf-4f14-a910-f5a28455a7ed.png" },
@@ -132,13 +133,14 @@ const About = () => {
         </div>
 
         {/* Spline 3D iframe */}
-        <div className="w-full h-96 rounded-xl overflow-hidden">
+        <div className="w-full h-96 overflow-hidden">
           <iframe 
             src='https://my.spline.design/lightningbulb-Xv8SlaybSvDoERbwo2QRyfJD/' 
             frameBorder='0' 
             width='100%' 
             height='100%'
-            className="w-full h-full"
+            className="w-full h-full pointer-events-none"
+            style={{ border: 'none' }}
           />
         </div>
       </div>
