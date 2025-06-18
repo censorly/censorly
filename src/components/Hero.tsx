@@ -33,11 +33,11 @@ const Hero = () => {
         </p>
 
         <div className="relative inline-block">
-          <div className="absolute -inset-1 rounded-lg overflow-hidden">
-            <div className="absolute inset-0 rounded-lg animate-spin" 
+          <div className="absolute -inset-1 rounded-lg">
+            <div className="absolute inset-0 rounded-lg animate-spin opacity-75" 
                  style={{
-                   background: 'conic-gradient(from 0deg, transparent 60%, #fb923c 80%, transparent 100%)',
-                   animationDuration: '2s'
+                   background: 'conic-gradient(from 0deg, transparent 70%, #fb923c 100%, transparent 130%)',
+                   animationDuration: '3s'
                  }}>
             </div>
           </div>
