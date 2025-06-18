@@ -32,22 +32,12 @@ const Hero = () => {
           to uncover real security issues before they ship. Public or private repo? You're covered.
         </p>
 
-        <div className="relative inline-block">
-          <div className="absolute -inset-1 rounded-lg">
-            <div className="absolute inset-0 rounded-lg animate-spin opacity-60" 
-                 style={{
-                   background: 'linear-gradient(90deg, transparent, transparent, #fb923c, transparent, transparent)',
-                   animationDuration: '2s'
-                 }}>
-            </div>
-          </div>
-          <Button 
-            size="lg" 
-            className="relative bg-black border border-gray-600 text-white hover:bg-gray-900 px-8 py-4 text-lg rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl animate-fade-in"
-          >
-            🔥 Scan My Code
-          </Button>
-        </div>
+        <Button 
+          size="lg" 
+          className="bg-black border border-gray-600 text-white hover:bg-gray-900 px-8 py-4 text-lg rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl animate-fade-in"
+        >
+          🔥 Scan My Code
+        </Button>
       </div>
 
       {/* Floating elements */}

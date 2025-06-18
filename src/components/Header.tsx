@@ -41,22 +41,12 @@ const Header = () => {
             </a>
           </div>
 
-          <div className="relative">
-            <div className="absolute -inset-0.5 rounded-lg">
-              <div className="absolute inset-0 rounded-lg animate-spin opacity-60" 
-                   style={{
-                     background: 'linear-gradient(90deg, transparent, transparent, #fb923c, transparent, transparent)',
-                     animationDuration: '2s'
-                   }}>
-              </div>
-            </div>
-            <Button 
-              variant="outline" 
-              className="relative border-gray-600 text-white hover:bg-white hover:text-black transition-all duration-200 bg-black"
-            >
-              Contact
-            </Button>
-          </div>
+          <Button 
+            variant="outline" 
+            className="border-gray-600 text-white hover:bg-white hover:text-black transition-all duration-200 bg-black"
+          >
+            Contact
+          </Button>
         </nav>
       </div>
     </header>
