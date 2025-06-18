@@ -89,7 +89,11 @@ const Features = () => {
             <div className="relative">
               <div className="bg-black rounded-2xl p-8">
                 <div className="aspect-square bg-black rounded-lg flex items-center justify-center relative overflow-hidden">
-                  <div className="text-8xl opacity-50">✋</div>
+                  <img 
+                    src="/lovable-uploads/c6733283-1b8b-4d1a-ab8b-58d8018851a4.png" 
+                    alt="Metallic Security Design"
+                    className="w-full h-full object-cover rounded-lg opacity-80 filter brightness-110 contrast-125"
+                  />
                 </div>
               </div>
             </div>
