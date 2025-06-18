@@ -73,7 +73,7 @@ const HowItWorks = () => {
               How VibeSec Works
             </span>
           </h2>
-          <p className="text-xl text-gray-400 leading-relaxed">
+          <p className="text-xl text-gray-200 leading-relaxed font-medium">
             From repo to report, VibeSec secures your code with AI-powered scanning, detailed reports, 
             and clear next steps. Here's how we help you build safer software fast.
           </p>
