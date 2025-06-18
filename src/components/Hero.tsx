@@ -7,7 +7,7 @@ const Hero = () => {
       {/* Spline 3D Background */}
       <div className="absolute inset-0 w-full h-full">
         <iframe 
-          src='https://my.spline.design/squarechipsfallinginplace-4i8Rq87n4UtzKgFNLAA5jXyr/' 
+          src='https://my.spline.design/legendarywaves-CJXL3X56ODDzD7rkaRRqiPht/' 
           frameBorder='0' 
           width='100%' 
           height='100%'
