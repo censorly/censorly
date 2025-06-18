@@ -1,5 +1,4 @@
 
-
 import { Button } from "@/components/ui/button";
 
 const HowItWorks = () => {
@@ -66,7 +65,9 @@ const HowItWorks = () => {
         <div className="space-y-8 max-w-2xl mx-auto">
           {steps.map((step, index) => (
             <div key={index} className="flex items-start space-x-4">
-              <div className="flex-shrink-0 w-12 h-12 bg-black rounded-full flex items-center justify-center border-2 border-white">
+              <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-gray-900 via-black to-gray-800 rounded-full flex items-center justify-center border-2 border-white shadow-[0_0_20px_rgba(255,255,255,0.3),inset_0_1px_0_rgba(255,255,255,0.2)] relative overflow-hidden">
+                {/* Shiny overlay effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-500 rounded-full"></div>
               </div>
               <div className="flex-1">
                 <h3 className="text-2xl font-bold mb-3 text-white">{step.title}</h3>
@@ -81,4 +82,3 @@ const HowItWorks = () => {
 };
 
 export default HowItWorks;
-
