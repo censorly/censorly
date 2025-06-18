@@ -31,6 +31,11 @@ const About = () => {
             Building the Future of{" "}
             <span className="text-gray-400">Secure AI Development</span>
           </h2>
+          
+          <p className="text-gray-300 text-lg md:text-xl leading-relaxed max-w-4xl mx-auto mb-16">
+            VibeSec is an AI-native platform that scans your code for real vulnerabilities, not false alarms. 
+            We help developers catch critical issues before they ship so you can move fast without breaking things.
+          </p>
         </div>
 
         {/* Three Info Boxes Side by Side */}
@@ -122,3 +127,4 @@ const About = () => {
 };
 
 export default About;
+
