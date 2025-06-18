@@ -1,4 +1,5 @@
 
+
 const About = () => {
   const logos = [
     { name: "GitHub", src: "/lovable-uploads/e2aee412-68cf-4f14-a910-f5a28455a7ed.png" },
@@ -36,12 +37,12 @@ const About = () => {
             {[...logos, ...logos, ...logos].map((logo, index) => (
               <div 
                 key={`${logo.name}-${index}`}
-                className="flex-shrink-0 w-12 h-12 flex items-center justify-center transition-transform duration-300"
+                className="flex-shrink-0 w-12 h-12 flex items-center justify-center"
               >
                 <img 
                   src={logo.src} 
                   alt={logo.name}
-                  className="max-w-full max-h-full object-contain filter brightness-75 transition-all duration-300"
+                  className="max-w-full max-h-full object-contain filter brightness-75"
                 />
               </div>
             ))}
@@ -52,11 +53,11 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Real Vulnerability Scanning */}
           <div className="relative bg-black border border-gray-800 rounded-xl p-8 shine-effect shiny-border overflow-hidden">
-            <div className="absolute top-4 left-4 w-20 h-20 opacity-30">
+            <div className="absolute top-4 left-4 w-20 h-20 opacity-50">
               <img 
                 src="/lovable-uploads/fbd2e930-22b2-438f-af18-7f11671da0ae.png" 
                 alt="Shield icon"
-                className="w-full h-full object-contain filter brightness-75"
+                className="w-full h-full object-contain filter brightness-100"
               />
             </div>
             <div className="flex flex-col items-start gap-4 relative z-10">
@@ -79,11 +80,11 @@ const About = () => {
 
           {/* AI-Powered Security Reports */}
           <div className="relative bg-black border border-gray-800 rounded-xl p-8 shine-effect shiny-border overflow-hidden">
-            <div className="absolute top-4 left-4 w-20 h-20 opacity-30">
+            <div className="absolute top-4 left-4 w-20 h-20 opacity-50">
               <img 
                 src="/lovable-uploads/745e0770-6fc2-4bb5-945c-6b1eb5b248d5.png" 
                 alt="Robot icon"
-                className="w-full h-full object-contain filter brightness-75"
+                className="w-full h-full object-contain filter brightness-100"
               />
             </div>
             <div className="flex flex-col items-start gap-4 relative z-10">
@@ -106,11 +107,11 @@ const About = () => {
 
           {/* Private & Public Repo Support */}
           <div className="relative bg-black border border-gray-800 rounded-xl p-8 shine-effect shiny-border overflow-hidden">
-            <div className="absolute top-4 left-4 w-20 h-20 opacity-30">
+            <div className="absolute top-4 left-4 w-20 h-20 opacity-50">
               <img 
                 src="/lovable-uploads/e6ac2eaa-9729-4800-a90e-2db574084b08.png" 
                 alt="GitHub icon"
-                className="w-full h-full object-contain filter brightness-75"
+                className="w-full h-full object-contain filter brightness-100"
               />
             </div>
             <div className="flex flex-col items-start gap-4 relative z-10">
@@ -137,3 +138,4 @@ const About = () => {
 };
 
 export default About;
+
