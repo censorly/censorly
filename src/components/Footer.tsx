@@ -1,7 +1,18 @@
 
 const Footer = () => {
   return (
-    <footer className="py-16 border-t border-gray-800 relative">
+    <footer className="py-16 border-t border-gray-800 relative overflow-hidden">
+      {/* Spline 3D Animation - positioned to span above and below footer */}
+      <div className="absolute -top-32 left-0 right-0 h-64 z-0">
+        <iframe 
+          src='https://my.spline.design/free3danimatedabstractshapes-U358KNxTJA4ZMF7ngyWBvAnW/' 
+          frameBorder='0' 
+          width='100%' 
+          height='100%'
+          className="pointer-events-none"
+        />
+      </div>
+
       {/* Background Image */}
       <div className="absolute inset-0 overflow-hidden">
         <img 
