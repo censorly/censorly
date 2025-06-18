@@ -2,7 +2,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import WhyVibeSec from "@/components/WhyVibeSec";
 import HowItWorks from "@/components/HowItWorks";
 import Features from "@/components/Features";
 import Developers from "@/components/Developers";
@@ -18,7 +17,6 @@ const Index = () => {
         <Header />
         <Hero />
         <About />
-        <WhyVibeSec />
         <HowItWorks />
         <Features />
         <Developers />
