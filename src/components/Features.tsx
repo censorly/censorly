@@ -1,4 +1,5 @@
 
+
 const Features = () => {
   const steps = [
     {
@@ -79,7 +80,7 @@ const Features = () => {
                   <div className="flex items-center space-x-3 mb-3">
                     <div className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center">
                       <img 
-                        src="/lovable-uploads/0b6363cf-db7f-44d0-a674-68adcd572d85.png" 
+                        src="/lovable-uploads/9aceed14-4908-45d1-bc75-552d322be516.png" 
                         alt="Connect GitHub Repo" 
                         className="w-8 h-8 object-contain"
                       />
@@ -95,7 +96,7 @@ const Features = () => {
                   <div className="flex items-center space-x-3 mb-3">
                     <div className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center">
                       <img 
-                        src="/lovable-uploads/1f7aefd4-1a43-404d-8864-714134dd99c9.png" 
+                        src="/lovable-uploads/cf62f380-5dd2-43cf-aa3c-761e83390015.png" 
                         alt="AI-Powered Scan" 
                         className="w-8 h-8 object-contain"
                       />
@@ -111,7 +112,7 @@ const Features = () => {
                   <div className="flex items-center space-x-3 mb-3">
                     <div className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center">
                       <img 
-                        src="/lovable-uploads/31f7d1c8-270b-475d-bf66-43ae0c957233.png" 
+                        src="/lovable-uploads/9a8d1cf3-a4f5-4378-b1ce-e8ec17af0e78.png" 
                         alt="Security Report" 
                         className="w-8 h-8 object-contain"
                       />
@@ -127,7 +128,7 @@ const Features = () => {
                   <div className="flex items-center space-x-3 mb-3">
                     <div className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center">
                       <img 
-                        src="/lovable-uploads/346f46e2-19cc-4f97-8b12-e017c99198a7.png" 
+                        src="/lovable-uploads/8bca81bc-29b8-4cec-ac92-690b15f98f9f.png" 
                         alt="One-Click Fix" 
                         className="w-8 h-8 object-contain"
                       />
@@ -160,3 +161,4 @@ const Features = () => {
 };
 
 export default Features;
+
