@@ -33,7 +33,12 @@ const Hero = () => {
         </p>
 
         <div className="relative inline-block">
-          <div className="absolute -inset-1 bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 rounded-lg opacity-60 animate-pulse" style={{ animationDuration: '3s' }}></div>
+          <div className="absolute -inset-1 rounded-lg opacity-60 animate-spin" 
+               style={{ 
+                 background: 'conic-gradient(from 0deg, transparent, #fb923c, #f97316, #ea580c, transparent)',
+                 animationDuration: '3s' 
+               }}>
+          </div>
           <Button 
             size="lg" 
             className="relative bg-black border border-gray-600 text-white hover:bg-gray-900 px-8 py-4 text-lg rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl animate-fade-in"
