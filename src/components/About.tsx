@@ -36,7 +36,7 @@ const About = () => {
           </p>
         </div>
 
-        {/* New Why VibeSec Section */}
+        {/* Why VibeSec Section */}
         <div className="relative min-h-[600px] flex items-center justify-center">
           {/* Background Video */}
           <div className="absolute inset-0 w-full h-full rounded-xl overflow-hidden">
