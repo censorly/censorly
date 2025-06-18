@@ -1,3 +1,4 @@
+
 const Features = () => {
   const steps = [
     {
@@ -78,7 +79,7 @@ const Features = () => {
                   <div className="flex items-center space-x-3 mb-3">
                     <div className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center">
                       <img 
-                        src="/lovable-uploads/ad6f60c2-388b-4548-b4d4-a34ee2b7d7dd.png" 
+                        src="/lovable-uploads/0b6363cf-db7f-44d0-a674-68adcd572d85.png" 
                         alt="Connect GitHub Repo" 
                         className="w-8 h-8 object-contain"
                       />
@@ -94,7 +95,7 @@ const Features = () => {
                   <div className="flex items-center space-x-3 mb-3">
                     <div className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center">
                       <img 
-                        src="/lovable-uploads/11dd4044-3e1b-401a-9726-eb38e139a4b2.png" 
+                        src="/lovable-uploads/1f7aefd4-1a43-404d-8864-714134dd99c9.png" 
                         alt="AI-Powered Scan" 
                         className="w-8 h-8 object-contain"
                       />
@@ -110,7 +111,7 @@ const Features = () => {
                   <div className="flex items-center space-x-3 mb-3">
                     <div className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center">
                       <img 
-                        src="/lovable-uploads/468111a1-3a56-484e-b838-4afe9c9f3646.png" 
+                        src="/lovable-uploads/31f7d1c8-270b-475d-bf66-43ae0c957233.png" 
                         alt="Security Report" 
                         className="w-8 h-8 object-contain"
                       />
@@ -126,7 +127,7 @@ const Features = () => {
                   <div className="flex items-center space-x-3 mb-3">
                     <div className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center">
                       <img 
-                        src="/lovable-uploads/37dc48d1-baba-41ac-8403-0bbd17f841d3.png" 
+                        src="/lovable-uploads/346f46e2-19cc-4f97-8b12-e017c99198a7.png" 
                         alt="One-Click Fix" 
                         className="w-8 h-8 object-contain"
                       />
