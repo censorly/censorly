@@ -6,18 +6,29 @@ const HowItWorks = () => {
     <section className="py-20 relative" id="how-it-works">
       <div className="max-w-5xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
-          {/* Video Section */}
+          {/* GitHub Integration Section */}
           <div className="relative">
             <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-gray-700">
-              <div className="aspect-video bg-gray-800 rounded-lg flex items-center justify-center relative overflow-hidden">
+              <div className="aspect-video bg-gray-800 rounded-lg flex flex-col items-center justify-center relative overflow-hidden p-8">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20"></div>
-                <div className="text-6xl text-white/80 z-10">🤖</div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center cursor-pointer hover:bg-white/20 transition-colors">
-                    <span className="text-2xl">▶️</span>
-                  </div>
+                
+                {/* First GitHub icon */}
+                <div className="relative z-10 mb-6">
+                  <img 
+                    src="/lovable-uploads/346f46e2-19cc-4f97-8b12-e017c99198a7.png" 
+                    alt="GitHub Logo"
+                    className="w-20 h-20 object-contain"
+                  />
                 </div>
-                <div className="absolute top-4 left-4 text-white font-bold text-4xl">AI</div>
+                
+                {/* Second GitHub integration image */}
+                <div className="relative z-10">
+                  <img 
+                    src="/lovable-uploads/cde97e5e-c1d5-4c12-9e46-f2e2ea4ff588.png" 
+                    alt="Connect Your Repo"
+                    className="w-64 h-auto object-contain rounded-lg"
+                  />
+                </div>
               </div>
             </div>
           </div>
