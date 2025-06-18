@@ -61,53 +61,54 @@ const Developers = () => {
 
         {/* Developer Features */}
         <div className="max-w-6xl mx-auto px-6 relative z-10">
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center px-3 py-1 glass-effect rounded-full mb-6 shiny-border">
-            <span className="w-2 h-2 bg-white rounded-full mr-2 shadow-[0_0_10px_rgba(255,255,255,0.8)]"></span>
-            <span className="text-white text-sm font-medium glow-text">FOR DEVELOPERS</span>
-          </div>
-          
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Built for Developers Who{" "}
-            <span className="text-gray-400">Care About Security</span>
-          </h2>
-          
-          <p className="text-xl text-gray-300 max-w-4xl mb-12">
-            VibeSec integrates directly into your development workflow to catch vulnerabilities early. 
-            Scan repos, get actionable insights, and ship confidently no security team required.
-          </p>
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center px-3 py-1 glass-effect rounded-full mb-6 shiny-border">
+              <span className="w-2 h-2 bg-white rounded-full mr-2 shadow-[0_0_10px_rgba(255,255,255,0.8)]"></span>
+              <span className="text-white text-sm font-medium glow-text">FOR DEVELOPERS</span>
+            </div>
+            
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              Built for Developers Who{" "}
+              <span className="text-gray-400">Care About Security</span>
+            </h2>
+            
+            <p className="text-xl text-gray-300 max-w-4xl mb-12">
+              VibeSec integrates directly into your development workflow to catch vulnerabilities early. 
+              Scan repos, get actionable insights, and ship confidently no security team required.
+            </p>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {features.map((feature, index) => (
-              <div 
-                key={index}
-                className={`p-6 rounded-xl border transition-all duration-300 hover:transform hover:scale-105 ${
-                  feature.highlight 
-                    ? 'bg-gradient-to-br from-blue-900/20 to-purple-900/20 border-blue-500/30' 
-                    : 'bg-gray-900/50 border-gray-800 hover:border-gray-700'
-                }`}
-              >
-                <div className="text-3xl mb-4">{feature.icon}</div>
-                <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
-                <p className="text-gray-400 text-sm">{feature.description}</p>
-              </div>
-            ))}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {features.map((feature, index) => (
+                <div 
+                  key={index}
+                  className={`p-6 rounded-xl border transition-all duration-300 hover:transform hover:scale-105 ${
+                    feature.highlight 
+                      ? 'bg-gradient-to-br from-blue-900/20 to-purple-900/20 border-blue-500/30' 
+                      : 'bg-gray-900/50 border-gray-800 hover:border-gray-700'
+                  }`}
+                >
+                  <div className="text-3xl mb-4">{feature.icon}</div>
+                  <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
+                  <p className="text-gray-400 text-sm">{feature.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
 
-        {/* Community Section */}
-        <div className="text-center">
-          <h3 className="text-2xl font-bold mb-4">
-            Join 100+ developers already using VibeSec to secure their codebase.
-          </h3>
-          
-          <Button 
-            size="lg" 
-            variant="outline"
-            className="shine-effect bg-black border border-gray-600 text-white hover:bg-white/10 hover:text-white hover:border-gray-500 rounded-full transition-all duration-300 transform hover:scale-105"
-          >
-            Start Free Trial ↗
-          </Button>
+          {/* Community Section */}
+          <div className="text-center">
+            <h3 className="text-2xl font-bold mb-4">
+              Join 100+ developers already using VibeSec to secure their codebase.
+            </h3>
+            
+            <Button 
+              size="lg" 
+              variant="outline"
+              className="shine-effect bg-black border border-gray-600 text-white hover:bg-white/10 hover:text-white hover:border-gray-500 rounded-full transition-all duration-300 transform hover:scale-105"
+            >
+              Start Free Trial ↗
+            </Button>
+          </div>
         </div>
       </div>
     </section>
