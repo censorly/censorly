@@ -43,12 +43,25 @@ const HowItWorks = () => {
               </div>
               
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                We're not just finding bugs. We're securing the future of code one repo at a time.
+                <span className="bg-gradient-to-r from-white via-gray-100 to-white bg-clip-text text-transparent glow-text">
+                  We're not just finding bugs.
+                </span>{" "}
+                <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-pulse">
+                  We're securing the future of code
+                </span>{" "}
+                <span className="text-white glow-text">one repo at a time.</span>
               </h2>
               
-              <p className="text-xl text-gray-300 mb-8">
-                Our mission is to democratize access to real application security. In a world where AI speeds up development, 
-                VibeSec ensures that security isn't left behind.
+              <p className="text-xl mb-8">
+                <span className="bg-gradient-to-r from-gray-300 via-white to-gray-300 bg-clip-text text-transparent font-medium">
+                  Our mission is to democratize access to real application security.
+                </span>{" "}
+                <span className="text-gray-300">
+                  In a world where AI speeds up development,{" "}
+                </span>
+                <span className="bg-gradient-to-r from-green-400 via-blue-400 to-purple-400 bg-clip-text text-transparent font-semibold glow-text">
+                  VibeSec ensures that security isn't left behind.
+                </span>
               </p>
             </div>
           </div>
