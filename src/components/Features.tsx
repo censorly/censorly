@@ -6,13 +6,12 @@ const Features = () => {
     <section className="py-20">
       <div className="container mx-auto px-6">
         {/* Solutions Section */}
-        <div className="mt-20">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="inline-flex items-center px-3 py-1 bg-yellow-500/20 rounded-full mb-6">
-                <span className="w-2 h-2 bg-yellow-400 rounded-full mr-2"></span>
-                <span className="text-yellow-400 text-sm font-medium">WHY VIBESEC</span>
-              </div>
+        <div className="max-w-6xl mx-auto px-6 relative z-10">
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center px-3 py-1 glass-effect rounded-full mb-6 shiny-border">
+            <span className="w-2 h-2 bg-white rounded-full mr-2 shadow-[0_0_10px_rgba(255,255,255,0.8)]"></span>
+            <span className="text-white text-sm font-medium glow-text">WHY VIBESEC</span>
+          </div>
               
               <h2 className="text-4xl font-bold mb-6">
                 Transformative Solutions{" "}
