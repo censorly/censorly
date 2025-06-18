@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -35,8 +36,8 @@ const Hero = () => {
           <div className="absolute -inset-1 rounded-lg overflow-hidden">
             <div className="absolute inset-0 rounded-lg" 
                  style={{
-                   background: 'conic-gradient(from 0deg, transparent 70%, #fb923c 85%, transparent 100%)',
-                   animation: 'spin 3s linear infinite'
+                   background: 'conic-gradient(from 0deg, transparent 60%, #fb923c 80%, transparent 100%)',
+                   animation: 'spin 4s ease-in-out infinite'
                  }}>
             </div>
           </div>
@@ -53,13 +54,6 @@ const Hero = () => {
       <div className="absolute top-20 left-10 w-20 h-20 bg-blue-500/10 rounded-full animate-pulse"></div>
       <div className="absolute bottom-20 right-10 w-32 h-32 bg-purple-500/10 rounded-full animate-pulse"></div>
       <div className="absolute top-1/2 left-5 w-16 h-16 bg-pink-500/10 rounded-full animate-pulse"></div>
-      
-      <style jsx>{`
-        @keyframes spin {
-          0% { transform: rotate(0deg); }
-          100% { transform: rotate(360deg); }
-        }
-      `}</style>
     </section>
   );
 };
