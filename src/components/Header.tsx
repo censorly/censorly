@@ -13,6 +13,16 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled ? 'glass-effect border-b border-white/20' : 'bg-transparent'
@@ -27,18 +37,30 @@ const Header = () => {
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#how-it-works" className="text-gray-300 hover:text-white hover:glow-text transition-all duration-200 shiny-border px-3 py-1 rounded">
+            <button 
+              onClick={() => scrollToSection('how-it-works')}
+              className="text-gray-300 hover:text-white hover:glow-text transition-all duration-200 shiny-border px-3 py-1 rounded cursor-pointer"
+            >
               HOW IT WORKS
-            </a>
-            <a href="#why-vibesec" className="text-gray-300 hover:text-white hover:glow-text transition-all duration-200 shiny-border px-3 py-1 rounded">
+            </button>
+            <button 
+              onClick={() => scrollToSection('why-vibesec')}
+              className="text-gray-300 hover:text-white hover:glow-text transition-all duration-200 shiny-border px-3 py-1 rounded cursor-pointer"
+            >
               WHY VIBESEC
-            </a>
-            <a href="#developers" className="text-gray-300 hover:text-white hover:glow-text transition-all duration-200 shiny-border px-3 py-1 rounded">
+            </button>
+            <button 
+              onClick={() => scrollToSection('developers')}
+              className="text-gray-300 hover:text-white hover:glow-text transition-all duration-200 shiny-border px-3 py-1 rounded cursor-pointer"
+            >
               FOR DEVELOPERS
-            </a>
-            <a href="#faq" className="text-gray-300 hover:text-white hover:glow-text transition-all duration-200 shiny-border px-3 py-1 rounded">
+            </button>
+            <button 
+              onClick={() => scrollToSection('faq')}
+              className="text-gray-300 hover:text-white hover:glow-text transition-all duration-200 shiny-border px-3 py-1 rounded cursor-pointer"
+            >
               FAQ
-            </a>
+            </button>
           </div>
 
           <Button 
