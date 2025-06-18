@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -20,10 +21,10 @@ const Hero = () => {
         />
       </div>
       
-      {/* Dark overlay to ensure text readability */}
-      <div className="absolute inset-0 bg-black/40 z-10"></div>
+      {/* Lighter overlay to ensure text readability without blocking the 3D scene */}
+      <div className="absolute inset-0 bg-black/20 z-10"></div>
       
-      {/* Animated background with shiny elements - keeping minimal for layering */}
+      {/* Minimal background effects - no blur */}
       <div className="absolute inset-0 z-20">
         <div className="absolute inset-0 bg-gradient-radial from-white/5 via-transparent to-transparent"></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1),transparent_50%)]"></div>
@@ -32,8 +33,8 @@ const Hero = () => {
       </div>
       
       <div className="container mx-auto px-6 text-center z-30 relative">
-        {/* AI Badge */}
-        <div className="inline-flex items-center px-4 py-2 glass-effect rounded-full mb-8 shiny-border animate-fade-in">
+        {/* AI Badge - removed backdrop-filter blur */}
+        <div className="inline-flex items-center px-4 py-2 bg-black/30 border border-white/20 rounded-full mb-8 shiny-border animate-fade-in">
           <div className="w-2 h-2 bg-white rounded-full mr-2 animate-pulse shadow-[0_0_10px_rgba(255,255,255,0.8)]"></div>
           <span className="text-sm text-white glow-text">🛡️ Powered by AI Security Intelligence</span>
         </div>
