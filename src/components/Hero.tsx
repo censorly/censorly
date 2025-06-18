@@ -4,14 +4,6 @@ import { Button } from "@/components/ui/button";
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-black">
-      {/* Animated background with shiny elements */}
-      <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-radial from-white/5 via-transparent to-transparent"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1),transparent_50%)]"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(255,255,255,0.05),transparent_50%)]"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_80%,rgba(255,255,255,0.05),transparent_50%)]"></div>
-      </div>
-      
       <div className="container mx-auto px-6 text-center z-10">
         {/* AI Badge */}
         <div className="inline-flex items-center px-4 py-2 glass-effect rounded-full mb-8 shiny-border animate-fade-in">
@@ -21,7 +13,7 @@ const Hero = () => {
 
         <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in glow-text">
           Find and Fix Code{" "}
-          <span className="bg-gradient-to-r from-white via-gray-300 to-white bg-clip-text text-transparent shine-effect">
+          <span className="bg-gradient-to-r from-white via-gray-300 to-white bg-clip-text text-transparent">
             Vulnerabilities
           </span>{" "}
           Instantly!
