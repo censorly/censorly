@@ -36,11 +36,11 @@ const FAQ = () => {
 
   return (
     <section className="py-20 relative" id="faq">
-      <div className="max-w-4xl mx-auto px-6">
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center px-3 py-1 bg-yellow-500/20 rounded-full mb-6">
-            <span className="w-2 h-2 bg-yellow-400 rounded-full mr-2"></span>
-            <span className="text-yellow-400 text-sm font-medium">FAQ</span>
+      <div className="max-w-6xl mx-auto px-6 relative z-10">
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center px-3 py-1 glass-effect rounded-full mb-6 shiny-border">
+            <span className="w-2 h-2 bg-white rounded-full mr-2 shadow-[0_0_10px_rgba(255,255,255,0.8)]"></span>
+            <span className="text-white text-sm font-medium glow-text">FAQ</span>
           </div>
           
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
