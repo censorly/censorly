@@ -1,4 +1,3 @@
-
 const About = () => {
   const logos = [
     { name: "GitHub", icon: "🐙" },
@@ -26,13 +25,6 @@ const About = () => {
             VibeSec is an AI-native platform that scans your code for real vulnerabilities, not false alarms. 
             We help developers catch critical issues before they ship so you can move fast without breaking things.
           </p>
-
-          {/* Product Hunt Badge */}
-          <div className="inline-flex items-center px-4 py-2 glass-effect rounded-lg mb-12 shiny-border">
-            <span className="text-white font-medium mr-2 glow-text">FEATURED ON</span>
-            <span className="text-white font-bold glow-text">Product Hunt</span>
-            <span className="ml-2 text-gray-400">263</span>
-          </div>
         </div>
 
         {/* Tech Logos */}
