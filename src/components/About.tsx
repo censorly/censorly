@@ -3,31 +3,15 @@ const About = () => {
   return (
     <section className="py-32 relative bg-black overflow-hidden min-h-screen" id="why-vibesec">
       <div className="max-w-7xl mx-auto px-6 relative z-10 h-full">
-        {/* Main content layout - horizontal */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32 min-h-[80vh]">
-          {/* Left side - Spline 3D design */}
-          <div className="relative h-[70vh] lg:h-[80vh]">
-            <iframe 
-              src='https://my.spline.design/retrofuturisticcircuitloop-ob9FcX0SVBUGYIkmLMLWHiqu/' 
-              frameBorder='0' 
-              width='100%' 
-              height='100%'
-              className="w-full h-full rounded-lg"
-              style={{ 
-                border: 'none',
-                background: 'transparent',
-                pointerEvents: 'none'
-              }}
-            />
-          </div>
-
-          {/* Right side - Mission text */}
-          <div className="space-y-8 flex flex-col justify-center">
+        {/* Main content layout - text only now */}
+        <div className="flex flex-col items-center justify-center mb-32 min-h-[80vh]">
+          {/* Mission text - centered */}
+          <div className="space-y-8 flex flex-col justify-center items-center text-center">
             <div className="inline-flex items-center px-4 py-2 border border-gray-600 rounded-lg mb-8 w-fit">
               <span className="text-white text-sm font-medium tracking-wider">WHY VIBESEC</span>
             </div>
             
-            <h2 className="text-4xl md:text-6xl font-bold mb-12 text-white leading-tight">
+            <h2 className="text-4xl md:text-6xl font-bold mb-12 text-white leading-tight max-w-4xl">
               We're not just finding bugs. We're securing the future of code one repo at a time.
             </h2>
             
@@ -35,6 +19,22 @@ const About = () => {
               Our mission is to democratize access to real application security. In a world where AI speeds up development, VibeSec ensures that security isn't left behind.
             </p>
           </div>
+        </div>
+
+        {/* Spline 3D design - horizontal between sections */}
+        <div className="relative h-[40vh] mb-20">
+          <iframe 
+            src='https://my.spline.design/retrofuturisticcircuitloop-ob9FcX0SVBUGYIkmLMLWHiqu/' 
+            frameBorder='0' 
+            width='100%' 
+            height='100%'
+            className="w-full h-full rounded-lg"
+            style={{ 
+              border: 'none',
+              background: 'transparent',
+              pointerEvents: 'none'
+            }}
+          />
         </div>
 
         {/* Three Info Boxes Side by Side */}
