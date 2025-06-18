@@ -4,7 +4,18 @@ import { Button } from "@/components/ui/button";
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-black">
-      <div className="container mx-auto px-6 text-center z-10">
+      {/* Spline 3D Background */}
+      <div className="absolute inset-0 w-full h-full">
+        <iframe 
+          src='https://my.spline.design/legendarywaves-CJXL3X56ODDzD7rkaRRqiPht/' 
+          frameBorder='0' 
+          width='100%' 
+          height='100%'
+          className="absolute inset-0"
+        />
+      </div>
+      
+      <div className="container mx-auto px-6 text-center z-10 relative">
         {/* AI Badge */}
         <div className="inline-flex items-center px-4 py-2 glass-effect rounded-full mb-8 shiny-border animate-fade-in">
           <div className="w-2 h-2 bg-white rounded-full mr-2 animate-pulse shadow-[0_0_10px_rgba(255,255,255,0.8)]"></div>
