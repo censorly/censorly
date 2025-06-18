@@ -64,8 +64,14 @@ const HowItWorks = () => {
             <span className="text-yellow-400 text-sm font-medium tracking-wide">HOW IT WORKS</span>
           </div>
           
-          <h2 className="text-5xl md:text-6xl font-bold mb-6 text-gray-300">
-            How VibeSec Works
+          <h2 className="text-5xl md:text-6xl font-bold mb-6">
+            <span 
+              data-text-fill="true" 
+              style={{backgroundImage: "linear-gradient(0deg, rgb(41, 41, 41) 0%, rgb(255, 255, 255) 83.7838%)"}}
+              className="bg-clip-text text-transparent"
+            >
+              How VibeSec Works
+            </span>
           </h2>
           <p className="text-xl text-gray-400 leading-relaxed">
             From repo to report, VibeSec secures your code with AI-powered scanning, detailed reports, 
