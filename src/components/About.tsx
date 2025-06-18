@@ -57,8 +57,11 @@ const About = () => {
                 <img 
                   src={logo.src} 
                   alt={logo.name}
-                  className="max-w-full max-h-full object-contain filter brightness-75 mix-blend-screen"
-                  style={{ background: 'transparent' }}
+                  className="max-w-full max-h-full object-contain filter brightness-150 contrast-200 saturate-0 invert"
+                  style={{ 
+                    background: 'transparent',
+                    mixBlendMode: 'screen'
+                  }}
                 />
               </div>
             ))}
