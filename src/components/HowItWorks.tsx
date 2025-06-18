@@ -1,4 +1,6 @@
 
+import { Button } from "@/components/ui/button";
+
 const HowItWorks = () => {
   return (
     <section className="py-20 relative" id="how-it-works">
