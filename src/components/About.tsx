@@ -3,10 +3,10 @@ const About = () => {
   return (
     <section className="py-32 relative bg-black overflow-hidden min-h-screen" id="why-vibesec">
       <div className="max-w-7xl mx-auto px-6 relative z-10 h-full">
-        {/* Main content layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20 min-h-[70vh]">
+        {/* Main content layout - horizontal */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32 min-h-[80vh]">
           {/* Left side - Spline 3D design */}
-          <div className="relative h-[60vh] lg:h-[70vh]">
+          <div className="relative h-[70vh] lg:h-[80vh]">
             <iframe 
               src='https://my.spline.design/retrofuturisticcircuitloop-ob9FcX0SVBUGYIkmLMLWHiqu/' 
               frameBorder='0' 
