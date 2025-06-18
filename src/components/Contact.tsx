@@ -35,7 +35,7 @@ const Contact = () => {
                   <Input 
                     id="name"
                     placeholder="David Johnson"
-                    className="bg-transparent border-white/20 border-b border-t-0 border-l-0 border-r-0 rounded-none text-white placeholder-gray-500 focus:border-white focus:ring-0 focus:ring-offset-0 px-0 py-3"
+                    className="bg-transparent border-0 border-b border-white/30 rounded-none text-white placeholder-gray-500 focus:border-white focus:ring-0 focus:ring-offset-0 focus-visible:ring-0 focus-visible:ring-offset-0 px-0 py-3 transition-colors duration-200"
                   />
                 </div>
                 <div className="space-y-2">
@@ -44,7 +44,7 @@ const Contact = () => {
                     id="email"
                     type="email"
                     placeholder="example@mail.com"
-                    className="bg-transparent border-white/20 border-b border-t-0 border-l-0 border-r-0 rounded-none text-white placeholder-gray-500 focus:border-white focus:ring-0 focus:ring-offset-0 px-0 py-3"
+                    className="bg-transparent border-0 border-b border-white/30 rounded-none text-white placeholder-gray-500 focus:border-white focus:ring-0 focus:ring-offset-0 focus-visible:ring-0 focus-visible:ring-offset-0 px-0 py-3 transition-colors duration-200"
                   />
                 </div>
               </div>
@@ -54,7 +54,7 @@ const Contact = () => {
                 <Input 
                   id="project"
                   placeholder="Ex: Promptique"
-                  className="bg-transparent border-white/20 border-b border-t-0 border-l-0 border-r-0 rounded-none text-white placeholder-gray-500 focus:border-white focus:ring-0 focus:ring-offset-0 px-0 py-3"
+                  className="bg-transparent border-0 border-b border-white/30 rounded-none text-white placeholder-gray-500 focus:border-white focus:ring-0 focus:ring-offset-0 focus-visible:ring-0 focus-visible:ring-offset-0 px-0 py-3 transition-colors duration-200"
                 />
               </div>
 
@@ -62,28 +62,28 @@ const Contact = () => {
                 <div className="space-y-2">
                   <Label htmlFor="looking" className="text-white text-base">What are you looking to do?*</Label>
                   <Select>
-                    <SelectTrigger className="bg-transparent border-white/20 border-b border-t-0 border-l-0 border-r-0 rounded-none text-white focus:border-white focus:ring-0 focus:ring-offset-0 px-0 py-3">
+                    <SelectTrigger className="bg-transparent border-0 border-b border-white/30 rounded-none text-white focus:border-white focus:ring-0 focus:ring-offset-0 focus-visible:ring-0 focus-visible:ring-offset-0 px-0 py-3 data-[state=open]:border-white transition-colors duration-200">
                       <SelectValue placeholder="Select an option" className="text-gray-500" />
                     </SelectTrigger>
                     <SelectContent className="bg-black border-white/20">
-                      <SelectItem value="general" className="text-white hover:bg-white/10">General question</SelectItem>
-                      <SelectItem value="security" className="text-white hover:bg-white/10">Security consultation</SelectItem>
-                      <SelectItem value="partnership" className="text-white hover:bg-white/10">Partnership inquiry</SelectItem>
-                      <SelectItem value="support" className="text-white hover:bg-white/10">Technical support</SelectItem>
+                      <SelectItem value="general" className="text-white hover:bg-white/10 focus:bg-white/10">General question</SelectItem>
+                      <SelectItem value="security" className="text-white hover:bg-white/10 focus:bg-white/10">Security consultation</SelectItem>
+                      <SelectItem value="partnership" className="text-white hover:bg-white/10 focus:bg-white/10">Partnership inquiry</SelectItem>
+                      <SelectItem value="support" className="text-white hover:bg-white/10 focus:bg-white/10">Technical support</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="role" className="text-white text-base">What's your role?*</Label>
                   <Select>
-                    <SelectTrigger className="bg-transparent border-white/20 border-b border-t-0 border-l-0 border-r-0 rounded-none text-white focus:border-white focus:ring-0 focus:ring-offset-0 px-0 py-3">
+                    <SelectTrigger className="bg-transparent border-0 border-b border-white/30 rounded-none text-white focus:border-white focus:ring-0 focus:ring-offset-0 focus-visible:ring-0 focus-visible:ring-offset-0 px-0 py-3 data-[state=open]:border-white transition-colors duration-200">
                       <SelectValue placeholder="Select Your Range" className="text-gray-500" />
                     </SelectTrigger>
                     <SelectContent className="bg-black border-white/20">
-                      <SelectItem value="developer" className="text-white hover:bg-white/10">Developer</SelectItem>
-                      <SelectItem value="security" className="text-white hover:bg-white/10">Security Engineer</SelectItem>
-                      <SelectItem value="cto" className="text-white hover:bg-white/10">CTO/Tech Lead</SelectItem>
-                      <SelectItem value="other" className="text-white hover:bg-white/10">Other</SelectItem>
+                      <SelectItem value="developer" className="text-white hover:bg-white/10 focus:bg-white/10">Developer</SelectItem>
+                      <SelectItem value="security" className="text-white hover:bg-white/10 focus:bg-white/10">Security Engineer</SelectItem>
+                      <SelectItem value="cto" className="text-white hover:bg-white/10 focus:bg-white/10">CTO/Tech Lead</SelectItem>
+                      <SelectItem value="other" className="text-white hover:bg-white/10 focus:bg-white/10">Other</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
@@ -95,7 +95,7 @@ const Contact = () => {
                   id="details"
                   rows={4}
                   placeholder="Let us know what you're working on or how we can help."
-                  className="bg-transparent border-white/20 border-b border-t-0 border-l-0 border-r-0 rounded-none text-white placeholder-gray-500 focus:border-white focus:ring-0 focus:ring-offset-0 px-0 py-3 resize-none"
+                  className="bg-transparent border-0 border-b border-white/30 rounded-none text-white placeholder-gray-500 focus:border-white focus:ring-0 focus:ring-offset-0 focus-visible:ring-0 focus-visible:ring-offset-0 px-0 py-3 resize-none transition-colors duration-200"
                 />
               </div>
 
