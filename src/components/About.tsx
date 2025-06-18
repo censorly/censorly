@@ -1,10 +1,14 @@
+
 const About = () => {
   const logos = [
-    { name: "GitHub", icon: "🐙" },
-    { name: "GitLab", icon: "🦊" },
-    { name: "Node.js", icon: "📗" },
-    { name: "React", icon: "⚛️" },
-    { name: "Python", icon: "🐍" },
+    { name: "GitHub", src: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=200&h=100&fit=crop" },
+    { name: "GitLab", src: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=200&h=100&fit=crop" },
+    { name: "Node.js", src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=200&h=100&fit=crop" },
+    { name: "React", src: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=200&h=100&fit=crop" },
+    { name: "Python", src: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=200&h=100&fit=crop" },
+    { name: "Docker", src: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=200&h=100&fit=crop" },
+    { name: "AWS", src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=200&h=100&fit=crop" },
+    { name: "MongoDB", src: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=200&h=100&fit=crop" },
   ];
 
   return (
@@ -27,17 +31,22 @@ const About = () => {
           </p>
         </div>
 
-        {/* Tech Logos */}
-        <div className="flex justify-center items-center space-x-12 mb-16">
-          {logos.map((logo, index) => (
-            <div 
-              key={logo.name}
-              className="text-4xl hover:scale-110 transition-transform duration-300 hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              {logo.icon}
-            </div>
-          ))}
+        {/* Logo Conveyor System */}
+        <div className="relative mb-16 overflow-hidden">
+          <div className="flex animate-[scroll_20s_linear_infinite] space-x-8">
+            {[...logos, ...logos].map((logo, index) => (
+              <div 
+                key={`${logo.name}-${index}`}
+                className="flex-shrink-0 w-48 h-24 glass-effect rounded-lg p-4 hover:scale-110 transition-transform duration-300 hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] shiny-border"
+              >
+                <img 
+                  src={logo.src} 
+                  alt={logo.name}
+                  className="w-full h-full object-cover rounded grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Feature Cards */}
