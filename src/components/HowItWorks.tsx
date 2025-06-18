@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 const HowItWorks = () => {
   return (
     <section className="py-20 relative" id="how-it-works">
-      <div className="container mx-auto px-6">
+      <div className="max-w-5xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           {/* Video Section */}
           <div className="relative">
@@ -47,14 +47,14 @@ const HowItWorks = () => {
         </div>
 
         {/* How It Works Steps */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 max-w-3xl mx-auto">
           <div className="inline-flex items-center px-3 py-1 bg-yellow-500/20 rounded-full mb-6">
             <span className="w-2 h-2 bg-yellow-400 rounded-full mr-2"></span>
             <span className="text-yellow-400 text-sm font-medium">HOW IT WORKS</span>
           </div>
           
           <h2 className="text-4xl md:text-5xl font-bold mb-6">How VibeSec Works</h2>
-          <p className="text-xl text-gray-300 max-w-4xl mx-auto">
+          <p className="text-xl text-gray-300">
             From repo to report, VibeSec secures your code with AI-powered scanning, detailed reports, 
             and clear next steps. Here's how we help you build safer software fast.
           </p>

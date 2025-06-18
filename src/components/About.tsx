@@ -12,7 +12,7 @@ const About = () => {
 
   return (
     <section className="py-20 relative bg-black" id="why-vibesec">
-      <div className="container mx-auto px-6">
+      <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-12">
           <div className="inline-flex items-center px-3 py-1 glass-effect rounded-full mb-6 shiny-border">
             <span className="w-2 h-2 bg-white rounded-full mr-2 shadow-[0_0_10px_rgba(255,255,255,0.8)]"></span>
@@ -24,14 +24,14 @@ const About = () => {
             <span className="text-gray-400">Secure AI Development</span>
           </h2>
           
-          <p className="text-xl text-gray-300 max-w-4xl mx-auto mb-12">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-12">
             VibeSec is an AI-native platform that scans your code for real vulnerabilities, not false alarms. 
             We help developers catch critical issues before they ship so you can move fast without breaking things.
           </p>
         </div>
 
         {/* Logo Conveyor System */}
-        <div className="relative mb-16 overflow-hidden max-w-4xl mx-auto">
+        <div className="relative mb-16 overflow-hidden max-w-2xl mx-auto">
           <div className="flex animate-[scroll_120s_linear_infinite] gap-16 items-center">
             {[...logos, ...logos, ...logos].map((logo, index) => (
               <div 
@@ -49,8 +49,8 @@ const About = () => {
         </div>
 
         {/* Feature Cards */}
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="glass-effect p-8 rounded-2xl hover:shadow-[0_0_30px_rgba(255,255,255,0.1)] transition-all duration-300 group shiny-border">
+        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="glass-effect p-6 rounded-2xl hover:shadow-[0_0_30px_rgba(255,255,255,0.1)] transition-all duration-300 group shiny-border">
             <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]">🛡️</div>
             <h3 className="text-xl font-semibold mb-4 glow-text">Real Vulnerability Scanning</h3>
             <p className="text-gray-400">
@@ -59,7 +59,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="glass-effect p-8 rounded-2xl hover:shadow-[0_0_30px_rgba(255,255,255,0.1)] transition-all duration-300 group shiny-border">
+          <div className="glass-effect p-6 rounded-2xl hover:shadow-[0_0_30px_rgba(255,255,255,0.1)] transition-all duration-300 group shiny-border">
             <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]">🤖</div>
             <h3 className="text-xl font-semibold mb-4 glow-text">AI-Powered Security Reports</h3>
             <p className="text-gray-400">
@@ -68,7 +68,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="glass-effect p-8 rounded-2xl hover:shadow-[0_0_30px_rgba(255,255,255,0.1)] transition-all duration-300 group shiny-border">
+          <div className="glass-effect p-6 rounded-2xl hover:shadow-[0_0_30px_rgba(255,255,255,0.1)] transition-all duration-300 group shiny-border">
             <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]">🔒</div>
             <h3 className="text-xl font-semibold mb-4 glow-text">Private & Public Repo Support</h3>
             <p className="text-gray-400">

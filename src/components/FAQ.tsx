@@ -36,7 +36,7 @@ const FAQ = () => {
 
   return (
     <section className="py-20 relative" id="faq">
-      <div className="container mx-auto px-6">
+      <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-12">
           <div className="inline-flex items-center px-3 py-1 bg-yellow-500/20 rounded-full mb-6">
             <span className="w-2 h-2 bg-yellow-400 rounded-full mr-2"></span>
@@ -53,7 +53,7 @@ const FAQ = () => {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, index) => (
               <AccordionItem 
@@ -73,7 +73,7 @@ const FAQ = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="text-center mt-20">
+        <div className="text-center mt-20 max-w-3xl mx-auto">
           <div className="bg-gradient-to-r from-blue-900/20 to-purple-900/20 rounded-2xl p-12 border border-gray-800">
             <p className="text-xl text-gray-300 mb-8">
               Built for devs. Backed by security. VibeSec helps you ship secure code without slowing down.
