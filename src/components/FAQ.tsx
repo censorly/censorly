@@ -44,7 +44,7 @@ const FAQ = () => {
             <span className="text-white text-sm font-medium glow-text">FAQ</span>
           </div>
           
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ textShadow: '0 0 20px rgba(255,255,255,0.6), 0 0 40px rgba(255,255,255,0.4)' }}>
             Questions{" "}
             <span className="text-gray-400">Developers Ask</span>
           </h2>
