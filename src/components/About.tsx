@@ -51,17 +51,24 @@ const About = () => {
         {/* Three Info Boxes Side by Side */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Real Vulnerability Scanning */}
-          <div className="bg-gray-900 border border-gray-700 rounded-xl p-8">
-            <div className="flex flex-col items-start gap-4">
-              <div className="w-16 h-16 flex items-center justify-center">
+          <div className="relative bg-black border border-gray-800 rounded-xl p-8 shine-effect shiny-border overflow-hidden">
+            <div className="absolute top-4 right-4 w-20 h-20 opacity-20">
+              <img 
+                src="/lovable-uploads/fbd2e930-22b2-438f-af18-7f11671da0ae.png" 
+                alt="Shield icon"
+                className="w-full h-full object-contain filter brightness-50"
+              />
+            </div>
+            <div className="flex flex-col items-start gap-4 relative z-10">
+              <div className="w-12 h-12 flex items-center justify-center">
                 <img 
                   src="/lovable-uploads/fbd2e930-22b2-438f-af18-7f11671da0ae.png" 
                   alt="Shield icon"
-                  className="w-12 h-12 object-contain filter brightness-100"
+                  className="w-10 h-10 object-contain filter brightness-100"
                 />
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-4 text-white">Real Vulnerability Scanning</h3>
+                <h3 className="text-xl font-semibold mb-4 text-white glow-text">Real Vulnerability Scanning</h3>
                 <p className="text-gray-400 leading-relaxed">
                   We don't just lint your code we audit it. VibeSec runs smart scans tailored to your stack, 
                   uncovering high-risk vulnerabilities with surgical precision.
@@ -71,17 +78,24 @@ const About = () => {
           </div>
 
           {/* AI-Powered Security Reports */}
-          <div className="bg-gray-900 border border-gray-700 rounded-xl p-8">
-            <div className="flex flex-col items-start gap-4">
-              <div className="w-16 h-16 flex items-center justify-center">
+          <div className="relative bg-black border border-gray-800 rounded-xl p-8 shine-effect shiny-border overflow-hidden">
+            <div className="absolute top-4 right-4 w-20 h-20 opacity-20">
+              <img 
+                src="/lovable-uploads/745e0770-6fc2-4bb5-945c-6b1eb5b248d5.png" 
+                alt="Robot icon"
+                className="w-full h-full object-contain filter brightness-50"
+              />
+            </div>
+            <div className="flex flex-col items-start gap-4 relative z-10">
+              <div className="w-12 h-12 flex items-center justify-center">
                 <img 
                   src="/lovable-uploads/745e0770-6fc2-4bb5-945c-6b1eb5b248d5.png" 
                   alt="Robot icon"
-                  className="w-12 h-12 object-contain filter brightness-100"
+                  className="w-10 h-10 object-contain filter brightness-100"
                 />
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-4 text-white">AI-Powered Security Reports</h3>
+                <h3 className="text-xl font-semibold mb-4 text-white glow-text">AI-Powered Security Reports</h3>
                 <p className="text-gray-400 leading-relaxed">
                   Each scan is followed by a human-readable AI-generated report no security team needed. 
                   Learn what's wrong, why it matters, and how to fix it.
@@ -91,17 +105,24 @@ const About = () => {
           </div>
 
           {/* Private & Public Repo Support */}
-          <div className="bg-gray-900 border border-gray-700 rounded-xl p-8">
-            <div className="flex flex-col items-start gap-4">
-              <div className="w-16 h-16 flex items-center justify-center">
+          <div className="relative bg-black border border-gray-800 rounded-xl p-8 shine-effect shiny-border overflow-hidden">
+            <div className="absolute top-4 right-4 w-20 h-20 opacity-20">
+              <img 
+                src="/lovable-uploads/e6ac2eaa-9729-4800-a90e-2db574084b08.png" 
+                alt="GitHub icon"
+                className="w-full h-full object-contain filter brightness-50"
+              />
+            </div>
+            <div className="flex flex-col items-start gap-4 relative z-10">
+              <div className="w-12 h-12 flex items-center justify-center">
                 <img 
                   src="/lovable-uploads/e6ac2eaa-9729-4800-a90e-2db574084b08.png" 
                   alt="GitHub icon"
-                  className="w-12 h-12 object-contain filter brightness-100"
+                  className="w-10 h-10 object-contain filter brightness-100"
                 />
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-4 text-white">Private & Public Repo Support</h3>
+                <h3 className="text-xl font-semibold mb-4 text-white glow-text">Private & Public Repo Support</h3>
                 <p className="text-gray-400 leading-relaxed">
                   Scan both public and private GitHub repos using your token. No setup, no agents. 
                   Just connect and scan securely in seconds.
