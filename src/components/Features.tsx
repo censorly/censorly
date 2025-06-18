@@ -1,4 +1,5 @@
 
+import { Button } from "@/components/ui/button";
 
 const Features = () => {
   const steps = [
@@ -70,10 +71,27 @@ const Features = () => {
                 <span className="text-gray-400">Across the Spectrum</span>
               </h2>
               
-              <p className="text-gray-300 mb-8">
-                Our range of solutions tailored to meet the unique needs of diverse industries, 
-                driving transformation across the entire spectrum.
-              </p>
+              <div className="mb-8">
+                <h3 className="text-2xl font-bold mb-4">
+                  Code secure. Stay secure. Let VibeSec do the hard work you build confidently.
+                </h3>
+                <p className="text-gray-300 text-lg leading-relaxed">
+                  In today's fast-paced development environment, security can't be an afterthought. 
+                  VibeSec empowers developers to ship code faster without compromising on security. 
+                  Our AI-powered scanning detects vulnerabilities, exposed secrets, and insecure patterns 
+                  before they reach production. Focus on building amazing features while we handle the 
+                  security heavy lifting.
+                </p>
+              </div>
+
+              <div className="mb-8">
+                <Button 
+                  variant="outline" 
+                  className="shine-effect text-white hover:bg-white/10 hover:glow-text transition-all duration-200 shiny-border"
+                >
+                  🚀 Start Your First Scan
+                </Button>
+              </div>
 
               <div className="space-y-6">
                 <div className="shine-effect rounded-2xl p-6 border border-gray-600">
@@ -161,4 +179,3 @@ const Features = () => {
 };
 
 export default Features;
-
