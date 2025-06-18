@@ -1,5 +1,6 @@
 
 
+
 const About = () => {
   return (
     <section className="py-20 relative bg-black overflow-hidden" id="why-vibesec">
@@ -31,8 +32,8 @@ const About = () => {
             <span className="text-gray-400">Secure AI Development</span>
           </h2>
           
-          <div className="bg-black/80 backdrop-blur-md border border-white/20 rounded-2xl p-8 max-w-4xl mx-auto mb-16 shine-effect">
-            <p className="text-2xl md:text-3xl text-white font-medium leading-relaxed glow-text">
+          <div className="bg-black/80 backdrop-blur-md rounded-2xl p-8 max-w-4xl mx-auto mb-16 shine-effect">
+            <p className="text-lg md:text-xl text-white font-medium leading-relaxed glow-text">
               VibeSec is an AI-native platform that scans your code for real vulnerabilities, not false alarms. 
               We help developers catch critical issues before they ship so you can move fast without breaking things.
             </p>
@@ -128,4 +129,3 @@ const About = () => {
 };
 
 export default About;
-
