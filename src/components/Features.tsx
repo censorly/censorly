@@ -121,7 +121,11 @@ const Features = () => {
               <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-gray-700">
                 <div className="aspect-square bg-gray-800 rounded-lg flex items-center justify-center relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-br from-gray-600/20 to-gray-800/20"></div>
-                  <div className="text-8xl opacity-50 z-10">🚀</div>
+                  <img 
+                    src="/lovable-uploads/26ea5041-8925-4176-b641-dba8fa534fa7.png" 
+                    alt="Transformative Solutions"
+                    className="w-full h-full object-cover rounded-lg z-10"
+                  />
                 </div>
               </div>
             </div>
