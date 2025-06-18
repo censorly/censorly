@@ -1,4 +1,5 @@
 
+
 const About = () => {
   return (
     <section className="py-20 relative bg-black overflow-hidden" id="why-vibesec">
@@ -39,7 +40,7 @@ const About = () => {
         {/* Three Info Boxes Side by Side */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
           {/* Real Vulnerability Scanning */}
-          <div className="relative bg-black border border-gray-800 rounded-xl p-8 shine-effect shiny-border overflow-hidden">
+          <div className="relative bg-black border border-gray-800 rounded-xl p-8 shine-effect overflow-hidden">
             <div className="absolute top-4 left-4 w-20 h-20 opacity-50">
               <img 
                 src="/lovable-uploads/fbd2e930-22b2-438f-af18-7f11671da0ae.png" 
@@ -66,7 +67,7 @@ const About = () => {
           </div>
 
           {/* AI-Powered Security Reports */}
-          <div className="relative bg-black border border-gray-800 rounded-xl p-8 shine-effect shiny-border overflow-hidden">
+          <div className="relative bg-black border border-gray-800 rounded-xl p-8 shine-effect overflow-hidden">
             <div className="absolute top-4 left-4 w-20 h-20 opacity-50">
               <img 
                 src="/lovable-uploads/745e0770-6fc2-4bb5-945c-6b1eb5b248d5.png" 
@@ -93,7 +94,7 @@ const About = () => {
           </div>
 
           {/* Private & Public Repo Support */}
-          <div className="relative bg-black border border-gray-800 rounded-xl p-8 shine-effect shiny-border overflow-hidden">
+          <div className="relative bg-black border border-gray-800 rounded-xl p-8 shine-effect overflow-hidden">
             <div className="absolute top-4 left-4 w-20 h-20 opacity-50">
               <img 
                 src="/lovable-uploads/e6ac2eaa-9729-4800-a90e-2db574084b08.png" 
@@ -125,3 +126,4 @@ const About = () => {
 };
 
 export default About;
+
