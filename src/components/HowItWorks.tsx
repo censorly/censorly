@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 
 const HowItWorks = () => {
@@ -62,7 +63,7 @@ const HowItWorks = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-500 rounded-full"></div>
               </div>
               <div className="flex-1">
-                <h3 className="text-2xl font-bold mb-3 text-white">{step.title}</h3>
+                <h3 className="text-2xl font-bold mb-3 text-white" style={{ textShadow: '0 0 20px rgba(255,255,255,0.6), 0 0 40px rgba(255,255,255,0.4)' }}>{step.title}</h3>
                 <p className="text-gray-300 text-lg leading-relaxed">{step.description}</p>
               </div>
             </div>
@@ -74,3 +75,4 @@ const HowItWorks = () => {
 };
 
 export default HowItWorks;
+
