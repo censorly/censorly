@@ -42,11 +42,13 @@ const Header = () => {
           </div>
 
           <div className="relative">
-            <div className="absolute -inset-0.5 rounded-lg opacity-60 animate-spin" 
-                 style={{ 
-                   background: 'conic-gradient(from 0deg, transparent, #fb923c, #f97316, #ea580c, transparent)',
-                   animationDuration: '3s' 
-                 }}>
+            <div className="absolute -inset-0.5 rounded-lg">
+              <div className="w-full h-full rounded-lg animate-spin opacity-60" 
+                   style={{ 
+                     background: 'conic-gradient(from 0deg, transparent, transparent, #fb923c, transparent, transparent)',
+                     animationDuration: '3s' 
+                   }}>
+              </div>
             </div>
             <Button 
               variant="outline" 
