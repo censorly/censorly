@@ -67,7 +67,7 @@ const HowItWorks = () => {
           <h2 className="text-5xl md:text-6xl font-bold mb-6">
             <span 
               data-text-fill="true" 
-              style={{backgroundImage: "linear-gradient(0deg, rgb(41, 41, 41) 0%, rgb(255, 255, 255) 83.7838%)"}}
+              style={{backgroundImage: "linear-gradient(0deg, rgb(200, 200, 200) 0%, rgb(255, 255, 255) 60%)"}}
               className="bg-clip-text text-transparent"
             >
               How VibeSec Works
