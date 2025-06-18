@@ -26,7 +26,7 @@ const Contact = () => {
         </div>
 
         <div className="max-w-3xl mx-auto">
-          <div className="bg-black border border-white/20 rounded-2xl p-8">
+          <div className="bg-gradient-to-br from-black via-gray-900 to-gray-800 border border-white/20 rounded-2xl p-8">
             <form className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
