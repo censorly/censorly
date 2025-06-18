@@ -73,7 +73,11 @@ const HowItWorks = () => {
               How VibeSec Works
             </span>
           </h2>
-          <p className="text-xl text-gray-200 leading-relaxed font-medium">
+          <p 
+            className="framer-text framer-styles-preset-1nsqjgg text-xl leading-relaxed font-medium" 
+            data-styles-preset="q4wPL8vyB" 
+            style={{"--framer-text-alignment": "center"}}
+          >
             From repo to report, VibeSec secures your code with AI-powered scanning, detailed reports, 
             and clear next steps. Here's how we help you build safer software fast.
           </p>
