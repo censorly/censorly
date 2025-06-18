@@ -1,5 +1,3 @@
-
-
 const About = () => {
   const logos = [
     { name: "GitHub", src: "/lovable-uploads/e2aee412-68cf-4f14-a910-f5a28455a7ed.png" },
@@ -50,7 +48,7 @@ const About = () => {
         </div>
 
         {/* Three Info Boxes Side by Side */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
           {/* Real Vulnerability Scanning */}
           <div className="relative bg-black border border-gray-800 rounded-xl p-8 shine-effect shiny-border overflow-hidden">
             <div className="absolute top-4 left-4 w-20 h-20 opacity-50">
@@ -132,10 +130,20 @@ const About = () => {
             </div>
           </div>
         </div>
+
+        {/* Spline 3D iframe */}
+        <div className="w-full h-96 rounded-xl overflow-hidden">
+          <iframe 
+            src='https://my.spline.design/lightningbulb-Xv8SlaybSvDoERbwo2QRyfJD/' 
+            frameBorder='0' 
+            width='100%' 
+            height='100%'
+            className="w-full h-full"
+          />
+        </div>
       </div>
     </section>
   );
 };
 
 export default About;
-
