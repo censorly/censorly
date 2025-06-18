@@ -25,9 +25,7 @@ const HowItWorks = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           {/* GitHub Integration Section */}
           <div className="relative">
-            <div className="aspect-video rounded-lg flex flex-col items-center justify-center relative overflow-hidden p-8">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20"></div>
-              
+            <div className="aspect-video rounded-lg flex flex-col items-center justify-center relative overflow-hidden p-8 bg-black">
               {/* GitHub icon */}
               <div className="relative z-10">
                 <img 
