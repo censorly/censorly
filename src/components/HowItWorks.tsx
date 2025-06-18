@@ -2,6 +2,24 @@
 import { Button } from "@/components/ui/button";
 
 const HowItWorks = () => {
+  const steps = [
+    {
+      icon: "🔗",
+      title: "Connect Your Repo",
+      description: "Securely connect your public or private GitHub repository in seconds using a token.",
+    },
+    {
+      icon: "⚡",
+      title: "Run an AI-Powered Scan",
+      description: "We analyze your code using static analysis and AI to detect exposed secrets, insecure patterns, and known vulnerabilities.",
+    },
+    {
+      icon: "📄",
+      title: "Get an Instant Report",
+      description: "Download a detailed security report with risk levels and fix instructions — built for developers, not compliance officers.",
+    },
+  ];
+
   return (
     <section className="py-20 relative" id="how-it-works">
       <div className="max-w-5xl mx-auto px-6">
@@ -48,30 +66,19 @@ const HowItWorks = () => {
           </div>
         </div>
 
-        {/* How It Works Section */}
-        <div className="text-center mb-12 max-w-4xl mx-auto">
-          <div className="inline-flex items-center px-4 py-2 bg-black border border-gray-600 rounded-full mb-8">
-            <span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>
-            <span className="text-yellow-400 text-sm font-medium tracking-wide">HOW IT WORKS</span>
-          </div>
-          
-          <h2 className="text-5xl md:text-6xl font-bold mb-6">
-            <span 
-              data-text-fill="true" 
-              style={{backgroundImage: "linear-gradient(0deg, rgb(41, 41, 41) 0%, rgb(255, 255, 255) 83.7838%)"}}
-              className="bg-clip-text text-transparent"
-            >
-              How VibeSec Works
-            </span>
-          </h2>
-          <p 
-            className="framer-text framer-styles-preset-1nsqjgg text-xl leading-relaxed font-medium" 
-            data-styles-preset="q4wPL8vyB" 
-            style={{textAlign: "center"} as React.CSSProperties}
-          >
-            From repo to report, VibeSec secures your code with AI-powered scanning, detailed reports, 
-            and clear next steps. Here's how we help you build safer software fast.
-          </p>
+        {/* Steps Section */}
+        <div className="space-y-8 max-w-2xl mx-auto">
+          {steps.map((step, index) => (
+            <div key={index} className="flex items-start space-x-4">
+              <div className="flex-shrink-0 w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center border border-gray-600">
+                <span className="text-xl">{step.icon}</span>
+              </div>
+              <div className="flex-1">
+                <h3 className="text-2xl font-bold mb-3 text-white">{step.title}</h3>
+                <p className="text-gray-300 text-lg leading-relaxed">{step.description}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
