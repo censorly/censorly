@@ -1,14 +1,13 @@
 
+
 const About = () => {
   const logos = [
-    { name: "GitHub", src: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=200&h=100&fit=crop" },
-    { name: "GitLab", src: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=200&h=100&fit=crop" },
-    { name: "Node.js", src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=200&h=100&fit=crop" },
-    { name: "React", src: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=200&h=100&fit=crop" },
-    { name: "Python", src: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=200&h=100&fit=crop" },
-    { name: "Docker", src: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=200&h=100&fit=crop" },
-    { name: "AWS", src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=200&h=100&fit=crop" },
-    { name: "MongoDB", src: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=200&h=100&fit=crop" },
+    { name: "GitHub", src: "/lovable-uploads/e2aee412-68cf-4f14-a910-f5a28455a7ed.png" },
+    { name: "GitLab", src: "/lovable-uploads/95189eba-4851-4685-87d5-d02f36c6b3e2.png" },
+    { name: "Google", src: "/lovable-uploads/6dbd2742-409d-4838-9ecf-8a6357f96caa.png" },
+    { name: "InVision", src: "/lovable-uploads/31f7d1c8-270b-475d-bf66-43ae0c957233.png" },
+    { name: "Apple", src: "/lovable-uploads/60ee3ac3-7840-4f56-96a2-22c6e2aa0371.png" },
+    { name: "Polygon", src: "/lovable-uploads/a2e80c6d-ed43-4302-8d87-6bab587fcf79.png" },
   ];
 
   return (
@@ -33,16 +32,16 @@ const About = () => {
 
         {/* Logo Conveyor System */}
         <div className="relative mb-16 overflow-hidden">
-          <div className="flex animate-[scroll_20s_linear_infinite] space-x-8">
+          <div className="flex animate-[scroll_60s_linear_infinite] space-x-8">
             {[...logos, ...logos].map((logo, index) => (
               <div 
                 key={`${logo.name}-${index}`}
-                className="flex-shrink-0 w-48 h-24 glass-effect rounded-lg p-4 hover:scale-110 transition-transform duration-300 hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] shiny-border"
+                className="flex-shrink-0 w-48 h-24 glass-effect rounded-lg p-4 hover:scale-110 transition-transform duration-300 hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] shiny-border flex items-center justify-center"
               >
                 <img 
                   src={logo.src} 
                   alt={logo.name}
-                  className="w-full h-full object-cover rounded grayscale hover:grayscale-0 transition-all duration-300"
+                  className="max-w-full max-h-full object-contain filter brightness-75 hover:brightness-100 transition-all duration-300"
                 />
               </div>
             ))}
@@ -84,3 +83,4 @@ const About = () => {
 };
 
 export default About;
+
