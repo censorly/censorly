@@ -162,7 +162,7 @@ const Features = () => {
                   </div>
                 </div>
                 
-                <button className="shine-effect text-white hover:bg-white/10 px-8 py-4 text-lg rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] shiny-border glow-text border border-gray-600">
+                <button className="bg-white text-black px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors">
                   🚀 Start Your First Scan
                 </button>
               </div>
@@ -187,5 +187,3 @@ const Features = () => {
 };
 
 export default Features;
-
-
