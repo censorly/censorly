@@ -83,40 +83,43 @@ const HowItWorks = () => {
           </div>
 
           {/* Steps List */}
-          <div className="space-y-6">
+          <div className="space-y-8">
             {/* Step 1 */}
-            <div className="flex items-start gap-6 p-6 bg-black border border-white/10 rounded-2xl hover:border-yellow-400/50 transition-all">
-              <div className="w-16 h-16 bg-black border border-white/20 rounded-full flex items-center justify-center flex-shrink-0">
-                <div className="w-6 h-6 bg-white rounded-sm"></div>
+            <div className="flex items-start gap-6">
+              <div className="w-12 h-12 bg-transparent border border-gray-600 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-3 h-3 bg-white rounded-full"></div>
               </div>
               <div className="flex-1">
-                <h3 className="text-xl font-bold text-white mb-2">Connect Your Repo</h3>
-                <p className="text-gray-400 mb-4">Securely connect your public or private GitHub repository in seconds using a token.</p>
-                <div className="w-full h-1 bg-yellow-400 rounded"></div>
+                <h3 className="text-2xl font-semibold text-white mb-3">Connect Your Repo</h3>
+                <p className="text-gray-400 text-lg leading-relaxed">
+                  Securely connect your public or private GitHub repository in seconds using a token.
+                </p>
               </div>
             </div>
 
             {/* Step 2 */}
-            <div className="flex items-start gap-6 p-6 bg-black border border-white/10 rounded-2xl hover:border-yellow-400/50 transition-all">
-              <div className="w-16 h-16 bg-black border border-white/20 rounded-full flex items-center justify-center flex-shrink-0">
-                <div className="w-6 h-6 bg-white rounded-sm"></div>
+            <div className="flex items-start gap-6">
+              <div className="w-12 h-12 bg-transparent border border-gray-600 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-3 h-3 bg-white rounded-full"></div>
               </div>
               <div className="flex-1">
-                <h3 className="text-xl font-bold text-white mb-2">Run an AI-Powered Scan</h3>
-                <p className="text-gray-400 mb-4">We analyze your code using static analysis and AI to detect exposed secrets, insecure patterns, and known vulnerabilities.</p>
-                <div className="w-full h-1 bg-yellow-400 rounded"></div>
+                <h3 className="text-2xl font-semibold text-white mb-3">Run an AI-Powered Scan</h3>
+                <p className="text-gray-400 text-lg leading-relaxed">
+                  We analyze your code using static analysis and AI to detect exposed secrets, insecure patterns, and known vulnerabilities.
+                </p>
               </div>
             </div>
 
             {/* Step 3 */}
-            <div className="flex items-start gap-6 p-6 bg-black border border-white/10 rounded-2xl hover:border-yellow-400/50 transition-all">
-              <div className="w-16 h-16 bg-black border border-white/20 rounded-full flex items-center justify-center flex-shrink-0">
-                <div className="w-6 h-6 bg-white rounded-sm"></div>
+            <div className="flex items-start gap-6">
+              <div className="w-12 h-12 bg-transparent border border-gray-600 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-3 h-3 bg-white rounded-full"></div>
               </div>
               <div className="flex-1">
-                <h3 className="text-xl font-bold text-white mb-2">Get an Instant Report</h3>
-                <p className="text-gray-400 mb-4">Download a detailed security report with risk levels and fix instructions — built for developers, not compliance officers.</p>
-                <div className="w-full h-1 bg-yellow-400 rounded"></div>
+                <h3 className="text-2xl font-semibold text-white mb-3">Get an Instant Report</h3>
+                <p className="text-gray-400 text-lg leading-relaxed">
+                  Download a detailed security report with risk levels and fix instructions — built for developers, not compliance officers.
+                </p>
               </div>
             </div>
           </div>
