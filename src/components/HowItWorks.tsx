@@ -42,28 +42,29 @@ const HowItWorks = () => {
             </div>
           </div>
 
-          <div className="max-w-6xl mx-auto px-6 relative z-10">
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center px-3 py-1 glass-effect rounded-full mb-6 shiny-border">
-            <span className="w-2 h-2 bg-white rounded-full mr-2 shadow-[0_0_10px_rgba(255,255,255,0.8)]"></span>
-            <span className="text-white text-sm font-medium glow-text">HOW IT WORKS</span>
-          </div>
-            
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              We're not just finding bugs. We're securing the future of code one repo at a time.
-            </h2>
-            
-            <p className="text-xl text-gray-300 mb-8">
-              Our mission is to democratize access to real application security. In a world where AI speeds up development, 
-              VibeSec ensures that security isn't left behind.
-            </p>
+          <div className="relative z-10">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center px-3 py-1 glass-effect rounded-full mb-6 shiny-border">
+                <span className="w-2 h-2 bg-white rounded-full mr-2 shadow-[0_0_10px_rgba(255,255,255,0.8)]"></span>
+                <span className="text-white text-sm font-medium glow-text">HOW IT WORKS</span>
+              </div>
+              
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                We're not just finding bugs. We're securing the future of code one repo at a time.
+              </h2>
+              
+              <p className="text-xl text-gray-300 mb-8">
+                Our mission is to democratize access to real application security. In a world where AI speeds up development, 
+                VibeSec ensures that security isn't left behind.
+              </p>
 
-            <Button 
-              variant="outline" 
-              className="border-gray-600 text-white hover:bg-white hover:text-black transition-all duration-200"
-            >
-              WHY VIBESEC
-            </Button>
+              <Button 
+                variant="outline" 
+                className="border-gray-600 text-white hover:bg-white hover:text-black transition-all duration-200"
+              >
+                WHY VIBESEC
+              </Button>
+            </div>
           </div>
         </div>
 
