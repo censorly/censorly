@@ -38,7 +38,7 @@ const Hero = () => {
 
         <Button 
           size="lg" 
-          className="shine-effect text-white hover:bg-white/10 px-8 py-4 text-lg rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] animate-fade-in shiny-border glow-text"
+          className="shine-effect bg-black border border-gray-600 text-white hover:bg-white/10 hover:border-gray-500 px-8 py-4 text-lg rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] animate-fade-in shiny-border glow-text"
         >
           🔥 Scan My Code
         </Button>

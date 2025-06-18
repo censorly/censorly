@@ -53,7 +53,7 @@ const Developers = () => {
           
           <Button 
             size="lg" 
-            className="shine-effect bg-black border border-gray-600 text-white hover:border-gray-500 px-8 py-4 text-lg rounded-lg transition-all duration-300 transform hover:scale-105"
+            className="shine-effect bg-black border border-gray-600 text-white hover:border-gray-500 px-8 py-4 text-lg rounded-full transition-all duration-300 transform hover:scale-105"
           >
             Start Your First Scan ↗
           </Button>
@@ -103,7 +103,7 @@ const Developers = () => {
           <Button 
             size="lg" 
             variant="outline"
-            className="border-gray-600 text-white hover:bg-white hover:text-black transition-all duration-200"
+            className="shine-effect bg-black border border-gray-600 text-white hover:bg-white/10 hover:text-white hover:border-gray-500 rounded-full transition-all duration-300 transform hover:scale-105"
           >
             Start Free Trial ↗
           </Button>
