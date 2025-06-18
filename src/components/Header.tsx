@@ -1,5 +1,4 @@
 
-
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 
@@ -44,10 +43,10 @@ const Header = () => {
 
           <div className="relative">
             <div className="absolute -inset-0.5 rounded-lg overflow-hidden">
-              <div className="absolute inset-0 rounded-lg" 
+              <div className="absolute inset-0 rounded-lg animate-spin" 
                    style={{
                      background: 'conic-gradient(from 0deg, transparent 60%, #fb923c 80%, transparent 100%)',
-                     animation: 'spin 2s linear infinite'
+                     animationDuration: '2s'
                    }}>
               </div>
             </div>
@@ -65,4 +64,3 @@ const Header = () => {
 };
 
 export default Header;
-
