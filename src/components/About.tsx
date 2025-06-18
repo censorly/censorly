@@ -1,12 +1,10 @@
-
-
 const About = () => {
   return (
     <section className="py-20 relative bg-black overflow-hidden" id="why-vibesec">
       {/* Spline 3D iframe - embedded directly in background */}
       <div className="absolute inset-0 w-full h-full">
         <iframe 
-          src='https://my.spline.design/lightningbulb-Xv8SlaybSvDoERbwo2QRyfJD/' 
+          src='https://my.spline.design/retrofuturisticcircuitloop-ob9FcX0SVBUGYIkmLMLWHiqu/' 
           frameBorder='0' 
           width='100%' 
           height='100%'
@@ -105,4 +103,3 @@ const About = () => {
 };
 
 export default About;
-
