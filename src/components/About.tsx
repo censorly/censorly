@@ -1,5 +1,4 @@
 
-
 const About = () => {
   const logos = [
     { name: "GitHub", src: "/lovable-uploads/e2aee412-68cf-4f14-a910-f5a28455a7ed.png" },
@@ -32,11 +31,11 @@ const About = () => {
 
         {/* Logo Conveyor System */}
         <div className="relative mb-16 overflow-hidden">
-          <div className="flex animate-[scroll_60s_linear_infinite] space-x-8">
+          <div className="flex animate-[scroll_60s_linear_infinite] space-x-12 items-center justify-center">
             {[...logos, ...logos].map((logo, index) => (
               <div 
                 key={`${logo.name}-${index}`}
-                className="flex-shrink-0 w-48 h-24 glass-effect rounded-lg p-4 hover:scale-110 transition-transform duration-300 hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] shiny-border flex items-center justify-center"
+                className="flex-shrink-0 w-32 h-16 flex items-center justify-center hover:scale-110 transition-transform duration-300"
               >
                 <img 
                   src={logo.src} 
@@ -83,4 +82,3 @@ const About = () => {
 };
 
 export default About;
-
