@@ -83,6 +83,22 @@ const About = () => {
             </div>
           </div>
         </div>
+
+        {/* Spline 3D design - below info boxes */}
+        <div className="relative h-[40vh] mt-20">
+          <iframe 
+            src='https://my.spline.design/retrofuturisticcircuitloop-ob9FcX0SVBUGYIkmLMLWHiqu/' 
+            frameBorder='0' 
+            width='100%' 
+            height='100%'
+            className="w-full h-full rounded-lg"
+            style={{ 
+              border: 'none',
+              background: 'transparent',
+              pointerEvents: 'none'
+            }}
+          />
+        </div>
       </div>
     </section>
   );
