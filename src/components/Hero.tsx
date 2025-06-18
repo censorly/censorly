@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -37,7 +38,7 @@ const Hero = () => {
             <div className="absolute inset-0 rounded-lg" 
                  style={{
                    background: 'conic-gradient(from 0deg, transparent 60%, #fb923c 80%, transparent 100%)',
-                   animation: 'spin 4s ease-in-out infinite'
+                   animation: 'spin 2s linear infinite'
                  }}>
             </div>
           </div>
@@ -59,3 +60,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
