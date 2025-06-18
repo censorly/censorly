@@ -11,7 +11,7 @@ const Hero = () => {
           frameBorder='0' 
           width='100%' 
           height='100%'
-          className="absolute inset-0"
+          className="absolute inset-0 pointer-events-none"
         />
       </div>
       
