@@ -12,7 +12,7 @@ const About = () => {
 
   return (
     <section className="py-20 relative bg-black" id="why-vibesec">
-      <div className="max-w-4xl mx-auto px-6">
+      <div className="max-w-3xl mx-auto px-6">
         <div className="text-center mb-12">
           <div className="inline-flex items-center px-3 py-1 glass-effect rounded-full mb-6 shiny-border">
             <span className="w-2 h-2 bg-white rounded-full mr-2 shadow-[0_0_10px_rgba(255,255,255,0.8)]"></span>
@@ -24,19 +24,51 @@ const About = () => {
             <span className="text-gray-400">Secure AI Development</span>
           </h2>
           
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-12">
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-12">
             VibeSec is an AI-native platform that scans your code for real vulnerabilities, not false alarms. 
             We help developers catch critical issues before they ship so you can move fast without breaking things.
           </p>
         </div>
 
+        {/* Info Box */}
+        <div className="mb-16">
+          <div 
+            className="rounded-t-3xl w-full"
+            style={{
+              background: "linear-gradient(rgb(255, 255, 255) 0%, rgb(0, 0, 0) 100%)"
+            }}
+          >
+            <div 
+              className="rounded-t-3xl p-8"
+              style={{
+                background: "radial-gradient(50% 50% at 20.2% 14.9%, rgb(21, 23, 30) 0%, rgb(0, 0, 0) 100%)"
+              }}
+            >
+              <div className="flex items-start gap-4">
+                <div className="w-6 h-6 flex-shrink-0">
+                  <div className="w-full h-full bg-white rounded flex items-center justify-center">
+                    <span className="text-black text-sm">🛡️</span>
+                  </div>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold mb-4 text-white">Real Vulnerability Scanning</h3>
+                  <p className="text-gray-300">
+                    We don't just lint your code we audit it. VibeSec runs smart scans tailored to your stack, 
+                    uncovering high-risk vulnerabilities with surgical precision.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Logo Conveyor System */}
-        <div className="relative mb-16 overflow-hidden max-w-2xl mx-auto">
-          <div className="flex animate-[scroll_120s_linear_infinite] gap-16 items-center">
+        <div className="relative mb-16 overflow-hidden max-w-xl mx-auto">
+          <div className="flex animate-[scroll_240s_linear_infinite] gap-12 items-center">
             {[...logos, ...logos, ...logos].map((logo, index) => (
               <div 
                 key={`${logo.name}-${index}`}
-                className="flex-shrink-0 w-16 h-16 flex items-center justify-center hover:scale-110 transition-transform duration-300"
+                className="flex-shrink-0 w-12 h-12 flex items-center justify-center hover:scale-110 transition-transform duration-300"
               >
                 <img 
                   src={logo.src} 
@@ -49,16 +81,7 @@ const About = () => {
         </div>
 
         {/* Feature Cards */}
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          <div className="glass-effect p-6 rounded-2xl hover:shadow-[0_0_30px_rgba(255,255,255,0.1)] transition-all duration-300 group shiny-border">
-            <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]">🛡️</div>
-            <h3 className="text-xl font-semibold mb-4 glow-text">Real Vulnerability Scanning</h3>
-            <p className="text-gray-400">
-              We don't just list your code; we audit it. VibeSec runs smart scans tailored to your stack, 
-              uncovering high-risk vulnerabilities.
-            </p>
-          </div>
-
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           <div className="glass-effect p-6 rounded-2xl hover:shadow-[0_0_30px_rgba(255,255,255,0.1)] transition-all duration-300 group shiny-border">
             <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]">🤖</div>
             <h3 className="text-xl font-semibold mb-4 glow-text">AI-Powered Security Reports</h3>
