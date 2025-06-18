@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -6,6 +7,103 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 
 const Contact = () => {
   return (
-    <div class="framer-1y5gwhk" data-framer-name="Form Stroke"><div class="framer-neu81f" data-framer-name="Form Wrapper"><form class="framer-152ydwn" data-framer-name="Contact Form"><div class="framer-61jjkt" data-framer-name="Col"><label class="framer-15lobsv"><div class="ssr-variant hidden-lons9a hidden-1kfel1r"><div class="framer-c7spaq" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none" data-framer-component-type="RichTextContainer"><p style="--font-selector:RlM7TWFucm9wZS1yZWd1bGFy;--framer-font-family:&quot;Manrope&quot;, &quot;Manrope Placeholder&quot;, sans-serif;--framer-font-size:18px;--framer-line-height:1.6em;--framer-text-color:var(--token-4448baec-b799-4862-9658-e0c2208a658f, rgb(255, 255, 255))" class="framer-text">Name *</p></div></div><div class="framer-1pr19o7" data-framer-name="Input"><div class="framer-form-text-input framer-form-input-wrapper framer-17kocd6"><input type="text" required="" name="Name" placeholder="David Johnson" class="framer-form-input framer-form-input-empty" value="" __h2d_shadowroot="1009"></div><div class="framer-1qbp5vu" data-framer-name="Line"></div></div></label><label class="framer-163jpgx" data-framer-name="Input"><div class="ssr-variant hidden-lons9a hidden-1kfel1r"><div class="framer-k377g2" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none" data-framer-component-type="RichTextContainer"><p style="--font-selector:RlM7TWFucm9wZS1yZWd1bGFy;--framer-font-family:&quot;Manrope&quot;, &quot;Manrope Placeholder&quot;, sans-serif;--framer-font-size:18px;--framer-line-height:1.6em;--framer-text-color:var(--token-4448baec-b799-4862-9658-e0c2208a658f, rgb(255, 255, 255))" class="framer-text">Email *</p></div></div><div class="framer-1ocmgvz" data-framer-name="Input"><div class="framer-form-text-input framer-form-input-wrapper framer-1auggui"><input type="email" required="" name="Email" placeholder="example@mail.com" class="framer-form-input framer-form-input-empty" value="" __h2d_shadowroot="1023"></div><div class="framer-1zbark" data-framer-name="Line"></div></div></label></div><label class="framer-141kbnj"><div class="ssr-variant hidden-lons9a hidden-1kfel1r"><div class="framer-1miqzmw" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none" data-framer-component-type="RichTextContainer"><p style="--font-selector:RlM7TWFucm9wZS1yZWd1bGFy;--framer-font-family:&quot;Manrope&quot;, &quot;Manrope Placeholder&quot;, sans-serif;--framer-font-size:18px;--framer-line-height:1.6em;--framer-text-color:var(--token-4448baec-b799-4862-9658-e0c2208a658f, rgb(255, 255, 255))" class="framer-text">Project Name</p></div></div><div class="framer-y4dnec" data-framer-name="Input"><div class="framer-form-text-input framer-form-input-wrapper framer-78618f"><input type="text" name="Project Name" placeholder="Ex.Promptique" class="framer-form-input framer-form-input-empty" value="" __h2d_shadowroot="1037"></div><div class="framer-jjvre9" data-framer-name="Line"></div></div></label><div class="framer-2bxhx6" data-framer-name="Col"><label class="framer-1eafj8w"><div class="ssr-variant hidden-lons9a hidden-1kfel1r"><div class="framer-mrpgv9" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none" data-framer-component-type="RichTextContainer"><p style="--font-selector:RlM7TWFucm9wZS1yZWd1bGFy;--framer-font-family:&quot;Manrope&quot;, &quot;Manrope Placeholder&quot;, sans-serif;--framer-font-size:18px;--framer-line-height:1.6em;--framer-text-color:var(--token-4448baec-b799-4862-9658-e0c2208a658f, rgb(255, 255, 255))" class="framer-text">What are you looking to do?*</p></div></div><div class="framer-1jhplq6" data-framer-name="Input"><div class="framer-form-input-wrapper framer-form-select-wrapper framer-1oxh5jp"><select name="Help" required="" class="framer-form-input" __h2d_shadowroot="1053"><option value="Select an option" __h2d_shadowroot="1062">Select an option</option><option value="" selected="" __h2d_shadowroot="1068">Scan my repo</option><option value="" selected="" __h2d_shadowroot="1074">Learn about pricing</option><option value="Team Plan" __h2d_shadowroot="1080">Request team plan</option><option value="" selected="" __h2d_shadowroot="1086">General question</option></select></div><div class="framer-1lzvq8a" data-framer-name="Line"></div></div></label><label class="framer-41vjg0"><div class="ssr-variant hidden-lons9a hidden-1kfel1r"><div class="framer-t0cpgy" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none" data-framer-component-type="RichTextContainer"><p style="--font-selector:RlM7TWFucm9wZS1yZWd1bGFy;--framer-font-family:&quot;Manrope&quot;, &quot;Manrope Placeholder&quot;, sans-serif;--framer-font-size:18px;--framer-line-height:1.6em;--framer-text-color:var(--token-4448baec-b799-4862-9658-e0c2208a658f, rgb(255, 255, 255))" class="framer-text">What's your role?*</p></div></div><div class="framer-33alxv" data-framer-name="Input"><div class="framer-form-input-wrapper framer-form-select-wrapper framer-10ddj65"><select name="Role" required="" class="framer-form-input" __h2d_shadowroot="1102"><option value="" selected="" __h2d_shadowroot="1111">Select Your Range</option><option value="Developer" __h2d_shadowroot="1117">Developer</option><option value="CTO/Founder" __h2d_shadowroot="1123">CTO/Founder</option><option value="Security Engineer" __h2d_shadowroot="1129">Security Engineer</option><option value="Other" __h2d_shadowroot="1135">Other</option></select></div><div class="framer-1l14z20" data-framer-name="Line"></div></div></label></div><label class="framer-1r72kgg"><div class="ssr-variant hidden-lons9a hidden-1kfel1r"><div class="framer-8qs4fp" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none" data-framer-component-type="RichTextContainer"><p style="--font-selector:RlM7TWFucm9wZS1yZWd1bGFy;--framer-font-family:&quot;Manrope&quot;, &quot;Manrope Placeholder&quot;, sans-serif;--framer-font-size:18px;--framer-line-height:1.6em;--framer-text-color:var(--token-4448baec-b799-4862-9658-e0c2208a658f, rgb(255, 255, 255))" class="framer-text">Project Details</p></div></div><div class="framer-zn9r5l" data-framer-name="Input"><div class="framer-form-text-input framer-form-input-wrapper framer-89z6s6"><textarea required="" name="Project Details" placeholder="Let us know what you’re working on or how we can help." class="framer-form-input" __h2d_shadowroot="1150"></textarea></div><div class="framer-yqjtgo" data-framer-name="Line"></div></div></label><div class="framer-1is7rng" data-framer-name="Col"><div class="ssr-variant hidden-1kfel1r"><div class="framer-c1ndoy-container"><button type="submit" class="framer-26RdZ framer-1au96of framer-v-1au96of" data-border="true" data-framer-name="Default" data-reset="button" style="--border-bottom-width:1px;--border-color:rgb(255, 255, 255);--border-left-width:1px;--border-right-width:1px;--border-style:solid;--border-top-width:1px;border-bottom-left-radius:8px;border-bottom-right-radius:8px;border-top-left-radius:8px;border-top-right-radius:8px;opacity:1" tabindex="0"><div class="framer-4xwtbq" style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; --extracted-r6o4lv: var(--token-b1fb3a8e-a88d-40f2-ad39-1f269e6b91e0, rgb(255, 255, 255)); --framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; transform: none; opacity: 1;" data-framer-component-type="RichTextContainer"><p style="--font-selector:RlM7TWFucm9wZS1yZWd1bGFy;--framer-font-family:&quot;Manrope&quot;, &quot;Manrope Placeholder&quot;, sans-serif;--framer-line-height:1.375em;--framer-text-color:var(--extracted-r6o4lv, var(--token-b1fb3a8e-a88d-40f2-ad39-1f269e6b91e0, rgb(255, 255, 255)))" class="framer-text">Submit</p></div></button></div></div><div class="framer-4afyj8" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none" data-framer-component-type="RichTextContainer"><p class="framer-text framer-styles-preset-1nsqjgg" data-styles-preset="q4wPL8vyB">We will contact you within 24 business hours.</p></div></div></form></div></div>
+    <div className="min-h-screen flex items-center justify-center p-6">
+      <div className="w-full max-w-2xl bg-gradient-to-br from-black via-gray-900 to-gray-800 border border-gray-700 rounded-lg p-8 shadow-2xl">
+        <form className="space-y-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="space-y-2">
+              <Label htmlFor="name" className="text-white text-lg">Name *</Label>
+              <Input 
+                id="name"
+                type="text" 
+                name="Name" 
+                placeholder="David Johnson"
+                required
+                className="bg-gray-800 border-gray-600 text-white placeholder-gray-400 focus:border-white"
+              />
+            </div>
+            
+            <div className="space-y-2">
+              <Label htmlFor="email" className="text-white text-lg">Email *</Label>
+              <Input 
+                id="email"
+                type="email" 
+                name="Email" 
+                placeholder="example@mail.com"
+                required
+                className="bg-gray-800 border-gray-600 text-white placeholder-gray-400 focus:border-white"
+              />
+            </div>
+          </div>
+
+          <div className="space-y-2">
+            <Label htmlFor="project" className="text-white text-lg">Project Name</Label>
+            <Input 
+              id="project"
+              type="text" 
+              name="Project Name" 
+              placeholder="Ex. Promptique"
+              className="bg-gray-800 border-gray-600 text-white placeholder-gray-400 focus:border-white"
+            />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="space-y-2">
+              <Label htmlFor="help" className="text-white text-lg">What are you looking to do? *</Label>
+              <Select name="Help" required>
+                <SelectTrigger className="bg-gray-800 border-gray-600 text-white focus:border-white">
+                  <SelectValue placeholder="Select an option" />
+                </SelectTrigger>
+                <SelectContent className="bg-gray-800 border-gray-600">
+                  <SelectItem value="scan">Scan my repo</SelectItem>
+                  <SelectItem value="pricing">Learn about pricing</SelectItem>
+                  <SelectItem value="team">Request team plan</SelectItem>
+                  <SelectItem value="general">General question</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+
+            <div className="space-y-2">
+              <Label htmlFor="role" className="text-white text-lg">What's your role? *</Label>
+              <Select name="Role" required>
+                <SelectTrigger className="bg-gray-800 border-gray-600 text-white focus:border-white">
+                  <SelectValue placeholder="Select Your Role" />
+                </SelectTrigger>
+                <SelectContent className="bg-gray-800 border-gray-600">
+                  <SelectItem value="developer">Developer</SelectItem>
+                  <SelectItem value="cto">CTO/Founder</SelectItem>
+                  <SelectItem value="security">Security Engineer</SelectItem>
+                  <SelectItem value="other">Other</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+          </div>
+
+          <div className="space-y-2">
+            <Label htmlFor="details" className="text-white text-lg">Project Details</Label>
+            <Textarea 
+              id="details"
+              name="Project Details" 
+              placeholder="Let us know what you're working on or how we can help."
+              className="bg-gray-800 border-gray-600 text-white placeholder-gray-400 focus:border-white min-h-[120px]"
+            />
+          </div>
+
+          <div className="space-y-4">
+            <Button 
+              type="submit" 
+              className="w-full bg-white text-black hover:bg-gray-200 border border-white rounded-lg py-3 text-lg font-medium transition-colors"
+            >
+              Submit
+            </Button>
+            <p className="text-gray-300 text-center text-sm">
+              We will contact you within 24 business hours.
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  );
+};
 
 export default Contact;
