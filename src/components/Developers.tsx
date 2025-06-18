@@ -46,7 +46,7 @@ const Developers = () => {
               <span className="text-white text-sm font-medium glow-text">FOR DEVELOPERS</span>
             </div>
             
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ textShadow: '0 0 20px rgba(255,255,255,0.6), 0 0 40px rgba(255,255,255,0.4)' }}>
               Built for Developers Who{" "}
               <span className="text-gray-400">Care About Security</span>
             </h2>
