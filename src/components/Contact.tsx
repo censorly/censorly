@@ -53,7 +53,7 @@ const Contact = () => {
                 <Input 
                   id="project"
                   placeholder="Ex: Promptique"
-                  className="bg-transparent border-0 border-b border-white/30 rounded-none text-white placeholder-gray-500 focus:border-white focus:outline-none focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0 px-0 py-3 transition-colors duration-200"
+                  className="bg-transparent border-0 border-b border-white/30 rounded-none text-white placeholder-gray-500 focus:border-white focus:outline-none focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0 px-0 py-3 transition-colors duration-200 shadow-none"
                 />
               </div>
 
