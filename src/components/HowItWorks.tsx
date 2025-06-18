@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 
 const HowItWorks = () => {
@@ -41,11 +42,11 @@ const HowItWorks = () => {
                 <span className="text-white text-sm font-medium glow-text">HOW IT WORKS</span>
               </div>
               
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white" style={{ textShadow: '0 0 20px rgba(255,255,255,0.6), 0 0 40px rgba(255,255,255,0.4), 0 0 60px rgba(255,255,255,0.2)' }}>
                 We're not just finding bugs. We're securing the future of code one repo at a time.
               </h2>
               
-              <p className="text-xl text-gray-300 mb-8">
+              <p className="text-xl text-gray-300 mb-8" style={{ textShadow: '0 0 15px rgba(255,255,255,0.3)' }}>
                 Our mission is to democratize access to real application security. In a world where AI speeds up development, VibeSec ensures that security isn't left behind.
               </p>
             </div>
