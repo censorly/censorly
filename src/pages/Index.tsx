@@ -22,10 +22,24 @@ const Index = () => {
         <Developers />
         <Contact />
         <FAQ />
-        <Footer />
+        
+        {/* Spline 3D Animation positioned above footer */}
+        <div className="relative">
+          <div className="absolute left-0 right-0 h-64 z-0 -top-32">
+            <iframe 
+              src='https://my.spline.design/free3danimatedabstractshapes-U358KNxTJA4ZMF7ngyWBvAnW/' 
+              frameBorder='0' 
+              width='100%' 
+              height='100%'
+              className="pointer-events-none"
+            />
+          </div>
+          <Footer />
+        </div>
       </div>
     </div>
   );
 };
 
 export default Index;
+
