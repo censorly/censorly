@@ -75,9 +75,11 @@ const Features = () => {
               </p>
 
               <div className="space-y-6">
-                <div className="bg-gray-900/50 p-6 rounded-lg border border-gray-800">
+                <div className="border border-gray-600 rounded-2xl p-6 bg-black/20 backdrop-blur-sm">
                   <div className="flex items-center space-x-3 mb-3">
-                    <span className="text-xl">🐙</span>
+                    <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center">
+                      <span className="text-lg">🐙</span>
+                    </div>
                     <h4 className="text-lg font-semibold">Connect Your GitHub Repo</h4>
                   </div>
                   <p className="text-gray-400">
@@ -85,9 +87,11 @@ const Features = () => {
                   </p>
                 </div>
 
-                <div className="bg-gray-900/50 p-6 rounded-lg border border-gray-800">
+                <div className="border border-gray-600 rounded-2xl p-6 bg-black/20 backdrop-blur-sm">
                   <div className="flex items-center space-x-3 mb-3">
-                    <span className="text-xl">🛡️</span>
+                    <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center">
+                      <span className="text-lg">🛡️</span>
+                    </div>
                     <h4 className="text-lg font-semibold">Run an AI-Powered Scan</h4>
                   </div>
                   <p className="text-gray-400">
@@ -95,9 +99,11 @@ const Features = () => {
                   </p>
                 </div>
 
-                <div className="bg-gray-900/50 p-6 rounded-lg border border-gray-800">
+                <div className="border border-gray-600 rounded-2xl p-6 bg-black/20 backdrop-blur-sm">
                   <div className="flex items-center space-x-3 mb-3">
-                    <span className="text-xl">📄</span>
+                    <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center">
+                      <span className="text-lg">📄</span>
+                    </div>
                     <h4 className="text-lg font-semibold">Get a Downloadable Security Report</h4>
                   </div>
                   <p className="text-gray-400">
@@ -105,9 +111,11 @@ const Features = () => {
                   </p>
                 </div>
 
-                <div className="bg-gray-900/50 p-6 rounded-lg border border-gray-800">
+                <div className="border border-gray-600 rounded-2xl p-6 bg-black/20 backdrop-blur-sm">
                   <div className="flex items-center space-x-3 mb-3">
-                    <span className="text-xl">🔧</span>
+                    <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center">
+                      <span className="text-lg">🔧</span>
+                    </div>
                     <h4 className="text-lg font-semibold">FUTURE: One-Click Fix (Pro Tier)</h4>
                   </div>
                   <p className="text-gray-400">
