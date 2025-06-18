@@ -42,11 +42,11 @@ const Header = () => {
           </div>
 
           <div className="relative">
-            <div className="absolute -inset-0.5 rounded-lg">
-              <div className="w-full h-full rounded-lg animate-spin opacity-60" 
-                   style={{ 
-                     background: 'conic-gradient(from 0deg, transparent, transparent, #fb923c, transparent, transparent)',
-                     animationDuration: '3s' 
+            <div className="absolute -inset-0.5 rounded-lg overflow-hidden">
+              <div className="absolute inset-0 rounded-lg" 
+                   style={{
+                     background: 'linear-gradient(90deg, transparent, #fb923c, transparent)',
+                     animation: 'border-spin 3s linear infinite'
                    }}>
               </div>
             </div>
@@ -59,6 +59,13 @@ const Header = () => {
           </div>
         </nav>
       </div>
+      
+      <style jsx>{`
+        @keyframes border-spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+      `}</style>
     </header>
   );
 };

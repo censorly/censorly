@@ -33,11 +33,11 @@ const Hero = () => {
         </p>
 
         <div className="relative inline-block">
-          <div className="absolute -inset-1 rounded-lg">
-            <div className="w-full h-full rounded-lg animate-spin opacity-60" 
-                 style={{ 
-                   background: 'conic-gradient(from 0deg, transparent, transparent, #fb923c, transparent, transparent)',
-                   animationDuration: '3s' 
+          <div className="absolute -inset-1 rounded-lg overflow-hidden">
+            <div className="absolute inset-0 rounded-lg" 
+                 style={{
+                   background: 'linear-gradient(90deg, transparent, #fb923c, transparent)',
+                   animation: 'border-spin 3s linear infinite'
                  }}>
             </div>
           </div>
@@ -54,6 +54,13 @@ const Hero = () => {
       <div className="absolute top-20 left-10 w-20 h-20 bg-blue-500/10 rounded-full animate-pulse"></div>
       <div className="absolute bottom-20 right-10 w-32 h-32 bg-purple-500/10 rounded-full animate-pulse"></div>
       <div className="absolute top-1/2 left-5 w-16 h-16 bg-pink-500/10 rounded-full animate-pulse"></div>
+      
+      <style jsx>{`
+        @keyframes border-spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+      `}</style>
     </section>
   );
 };
