@@ -54,38 +54,28 @@ const FAQ = () => {
           </p>
         </div>
 
-        <div className="flex items-start gap-12">
-          {/* Left side text */}
-          <div className="flex-shrink-0 hidden lg:block">
-            <p className="text-gray-400 text-lg font-medium writing-mode-vertical transform rotate-180 whitespace-nowrap">
-              Questions Developers Ask
-            </p>
-          </div>
-
-          {/* FAQ content */}
-          <div className="flex-1 max-w-3xl">
-            <div className="space-y-4">
-              {faqs.map((faq, index) => (
-                <div key={index} className="border border-gray-700 rounded-lg bg-black/40">
-                  <Accordion type="single" collapsible>
-                    <AccordionItem 
-                      value={`item-${index}`}
-                      className="border-none"
-                    >
-                      <AccordionTrigger className="text-left text-white hover:text-gray-300 px-6 py-6 [&>svg]:hidden">
-                        <div className="flex items-center justify-between w-full">
-                          <span className="text-lg font-medium">{faq.question}</span>
-                          <Plus className="h-6 w-6 shrink-0 transition-transform duration-200 group-data-[state=open]/trigger:rotate-45" />
-                        </div>
-                      </AccordionTrigger>
-                      <AccordionContent className="text-gray-400 px-6 pb-6 pt-0">
-                        {faq.answer}
-                      </AccordionContent>
-                    </AccordionItem>
-                  </Accordion>
-                </div>
-              ))}
-            </div>
+        <div className="max-w-3xl mx-auto">
+          <div className="space-y-4">
+            {faqs.map((faq, index) => (
+              <div key={index} className="border border-gray-700 rounded-lg bg-black/40">
+                <Accordion type="single" collapsible>
+                  <AccordionItem 
+                    value={`item-${index}`}
+                    className="border-none"
+                  >
+                    <AccordionTrigger className="text-left text-white hover:text-gray-300 px-6 py-6 [&>svg]:hidden">
+                      <div className="flex items-center justify-between w-full">
+                        <span className="text-lg font-medium">{faq.question}</span>
+                        <Plus className="h-6 w-6 shrink-0 transition-transform duration-200 group-data-[state=open]/trigger:rotate-45" />
+                      </div>
+                    </AccordionTrigger>
+                    <AccordionContent className="text-gray-400 px-6 pb-6 pt-0">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+              </div>
+            ))}
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
+
 const Footer = () => {
   return (
-    <footer className="py-16 border-t border-gray-800 relative overflow-hidden">
+    <footer className="py-16 border-t border-gray-800 relative">
       {/* Background Image */}
       <div className="absolute inset-0 overflow-hidden">
         <img 
