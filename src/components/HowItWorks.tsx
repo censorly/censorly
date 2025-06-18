@@ -50,13 +50,6 @@ const HowItWorks = () => {
                 Our mission is to democratize access to real application security. In a world where AI speeds up development, 
                 VibeSec ensures that security isn't left behind.
               </p>
-
-              <Button 
-                variant="outline" 
-                className="border-gray-600 text-white hover:bg-white hover:text-black transition-all duration-200"
-              >
-                WHY VIBESEC
-              </Button>
             </div>
           </div>
         </div>
