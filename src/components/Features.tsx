@@ -42,14 +42,14 @@ const Features = () => {
           {/* Steps */}
           <div className="space-y-8">
             {steps.map((step, index) => (
-              <div key={index} className="flex items-start space-x-4 group">
-                <div className="flex-shrink-0 w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center group-hover:bg-gray-700 transition-colors">
-                  <span className="text-xl">{step.icon}</span>
+              <div key={index} className="border border-gray-600 rounded-2xl p-6 bg-black/20 backdrop-blur-sm">
+                <div className="flex items-center space-x-3 mb-3">
+                  <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center">
+                    <span className="text-lg">{step.icon}</span>
+                  </div>
+                  <h4 className="text-lg font-semibold">{step.title}</h4>
                 </div>
-                <div>
-                  <h4 className="text-xl font-semibold mb-2">{step.title}</h4>
-                  <p className="text-gray-400">{step.description}</p>
-                </div>
+                <p className="text-gray-400">{step.description}</p>
               </div>
             ))}
           </div>
@@ -129,9 +129,9 @@ const Features = () => {
               <div className="bg-black rounded-2xl p-8">
                 <div className="aspect-square bg-black rounded-lg flex items-center justify-center relative overflow-hidden">
                   <img 
-                    src="/lovable-uploads/26ea5041-8925-4176-b641-dba8fa534fa7.png" 
-                    alt="Transformative Solutions"
-                    className="w-full h-full object-cover rounded-lg grayscale brightness-110 contrast-125 saturate-0 filter drop-shadow-[0_0_20px_rgba(255,255,255,0.3)]"
+                    src="/lovable-uploads/346f46e2-19cc-4f97-8b12-e017c99198a7.png" 
+                    alt="GitHub Logo"
+                    className="w-full h-full object-contain rounded-lg filter brightness-110 contrast-125"
                   />
                 </div>
               </div>
