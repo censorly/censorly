@@ -41,13 +41,6 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
           {/* Real Vulnerability Scanning */}
           <div className="relative bg-black border border-gray-800 rounded-xl p-8 shine-effect overflow-hidden">
-            <div className="absolute top-4 left-4 w-20 h-20 opacity-50">
-              <img 
-                src="/lovable-uploads/fbd2e930-22b2-438f-af18-7f11671da0ae.png" 
-                alt="Shield icon"
-                className="w-full h-full object-contain filter brightness-100"
-              />
-            </div>
             <div className="flex flex-col items-start gap-4 relative z-10">
               <div className="w-12 h-12 flex items-center justify-center">
                 <img 
@@ -68,13 +61,6 @@ const About = () => {
 
           {/* AI-Powered Security Reports */}
           <div className="relative bg-black border border-gray-800 rounded-xl p-8 shine-effect overflow-hidden">
-            <div className="absolute top-4 left-4 w-20 h-20 opacity-50">
-              <img 
-                src="/lovable-uploads/745e0770-6fc2-4bb5-945c-6b1eb5b248d5.png" 
-                alt="Robot icon"
-                className="w-full h-full object-contain filter brightness-100"
-              />
-            </div>
             <div className="flex flex-col items-start gap-4 relative z-10">
               <div className="w-12 h-12 flex items-center justify-center">
                 <img 
@@ -95,13 +81,6 @@ const About = () => {
 
           {/* Private & Public Repo Support */}
           <div className="relative bg-black border border-gray-800 rounded-xl p-8 shine-effect overflow-hidden">
-            <div className="absolute top-4 left-4 w-20 h-20 opacity-50">
-              <img 
-                src="/lovable-uploads/e6ac2eaa-9729-4800-a90e-2db574084b08.png" 
-                alt="GitHub icon"
-                className="w-full h-full object-contain filter brightness-100"
-              />
-            </div>
             <div className="flex flex-col items-start gap-4 relative z-10">
               <div className="w-12 h-12 flex items-center justify-center">
                 <img 
