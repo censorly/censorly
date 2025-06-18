@@ -1,5 +1,6 @@
 
 
+
 const Features = () => {
   const steps = [
     {
@@ -140,6 +141,31 @@ const Features = () => {
                   </p>
                 </div>
               </div>
+
+              {/* Enhanced Call-to-Action Section */}
+              <div className="mt-12 text-center">
+                <div className="mb-8">
+                  <h3 className="text-3xl font-bold mb-4 glow-text">
+                    Code Secure. Stay Secure.
+                  </h3>
+                  <div className="space-y-3">
+                    <p className="text-xl text-gray-300">
+                      Let VibeSec handle the security heavy lifting while you focus on building amazing products.
+                    </p>
+                    <p className="text-lg text-gray-400">
+                      Our AI-powered security scanning identifies vulnerabilities instantly, giving you actionable insights 
+                      and peace of mind. From exposed secrets to insecure code patterns, we catch what others miss.
+                    </p>
+                    <p className="text-base text-gray-500">
+                      Join thousands of developers who trust VibeSec to secure their code before it ships to production.
+                    </p>
+                  </div>
+                </div>
+                
+                <button className="shine-effect text-white hover:bg-white/10 px-8 py-4 text-lg rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] shiny-border glow-text border border-gray-600">
+                  🚀 Start Your First Scan
+                </button>
+              </div>
             </div>
 
             <div className="relative">
@@ -161,4 +187,5 @@ const Features = () => {
 };
 
 export default Features;
+
 
