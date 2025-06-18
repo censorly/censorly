@@ -21,9 +21,6 @@ const Hero = () => {
         />
       </div>
       
-      {/* Very light overlay to ensure text readability */}
-      <div className="absolute inset-0 bg-black/10 z-10"></div>
-      
       {/* Clean background effects without any blur */}
       <div className="absolute inset-0 z-20">
         <div className="absolute inset-0 bg-gradient-radial from-white/3 via-transparent to-transparent"></div>
