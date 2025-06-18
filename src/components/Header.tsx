@@ -43,10 +43,10 @@ const Header = () => {
 
           <div className="relative">
             <div className="absolute -inset-0.5 rounded-lg">
-              <div className="absolute inset-0 rounded-lg animate-spin opacity-75" 
+              <div className="absolute inset-0 rounded-lg animate-spin opacity-60" 
                    style={{
-                     background: 'conic-gradient(from 0deg, transparent 70%, #fb923c 100%, transparent 130%)',
-                     animationDuration: '3s'
+                     background: 'linear-gradient(90deg, transparent, transparent, #fb923c, transparent, transparent)',
+                     animationDuration: '2s'
                    }}>
               </div>
             </div>
