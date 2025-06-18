@@ -71,56 +71,115 @@ const HowItWorks = () => {
           </p>
         </div>
 
-        {/* Steps Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Step 1: Connect Your Repo */}
-          <div className="text-center">
-            <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-6 border border-gray-700 mb-6">
-              <img 
-                src="/lovable-uploads/346f46e2-19cc-4f97-8b12-e017c99198a7.png" 
-                alt="GitHub Logo"
-                className="w-16 h-16 mx-auto object-contain"
-              />
+        {/* Main Visual Section */}
+        <div className="relative bg-gradient-to-b from-white to-black rounded-2xl overflow-hidden mb-12">
+          <div className="bg-gradient-to-br from-gray-900/50 to-black/90 rounded-2xl p-8">
+            <div className="relative bg-gradient-to-br from-gray-800 to-black rounded-2xl overflow-hidden">
+              {/* Background image */}
+              <div className="absolute inset-0 opacity-30">
+                <img 
+                  src="/lovable-uploads/cde97e5e-c1d5-4c12-9e46-f2e2ea4ff588.png" 
+                  alt="Background"
+                  className="w-full h-full object-cover grayscale"
+                />
+              </div>
+              
+              {/* Floating cards */}
+              <div className="relative z-10 p-12">
+                {/* Center card */}
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                  <div className="bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-600 rounded-lg p-6 w-80">
+                    <div className="flex items-center gap-4 mb-4">
+                      <img 
+                        src="/lovable-uploads/346f46e2-19cc-4f97-8b12-e017c99198a7.png" 
+                        alt="VR tech"
+                        className="w-12 h-12 object-contain rounded-lg"
+                      />
+                      <div>
+                        <h5 className="text-white font-semibold text-lg">Connect Your Repo</h5>
+                        <p className="text-gray-400 text-sm">Securely connect your public or private GitHub repository in seconds using a token.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Left card */}
+                <div className="absolute top-1/2 left-8 transform -translate-y-1/2">
+                  <div className="bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-600 rounded-lg p-6 w-80">
+                    <div className="flex items-center gap-4 mb-4">
+                      <img 
+                        src="/lovable-uploads/346f46e2-19cc-4f97-8b12-e017c99198a7.png" 
+                        alt="VR tech"
+                        className="w-12 h-12 object-contain rounded-lg"
+                      />
+                      <div>
+                        <h5 className="text-white font-semibold text-lg">Connect Your Repo</h5>
+                        <p className="text-gray-400 text-sm">Securely connect your public or private GitHub repository in seconds using a token.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Right card */}
+                <div className="absolute top-1/2 right-8 transform -translate-y-1/2">
+                  <div className="bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-600 rounded-lg p-6 w-80">
+                    <div className="flex items-center gap-4 mb-4">
+                      <img 
+                        src="/lovable-uploads/346f46e2-19cc-4f97-8b12-e017c99198a7.png" 
+                        alt="VR tech"
+                        className="w-12 h-12 object-contain rounded-lg"
+                      />
+                      <div>
+                        <h5 className="text-white font-semibold text-lg">Connect Your Repo</h5>
+                        <p className="text-gray-400 text-sm">Securely connect your public or private GitHub repository in seconds using a token.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Spacer for height */}
+                <div className="h-96"></div>
+              </div>
             </div>
-            <div className="inline-flex items-center px-3 py-1 bg-yellow-500/20 rounded-full mb-4">
-              <span className="text-yellow-400 text-sm font-medium">STEP 1</span>
+          </div>
+        </div>
+
+        {/* Steps List */}
+        <div className="space-y-6">
+          {/* Step 1 */}
+          <div className="flex items-start gap-6 p-6 bg-black border border-white/10 rounded-2xl hover:border-yellow-400/50 transition-all">
+            <div className="w-16 h-16 bg-black border border-white/20 rounded-full flex items-center justify-center flex-shrink-0">
+              <div className="w-6 h-6 bg-white rounded-sm"></div>
             </div>
-            <h3 className="text-xl font-bold mb-2 text-white">Connect Your Repo</h3>
-            <p className="text-gray-400">
-              Simply connect your GitHub repository using your token. Works with both public and private repos.
-            </p>
+            <div className="flex-1">
+              <h3 className="text-xl font-bold text-white mb-2">Connect Your Repo</h3>
+              <p className="text-gray-400 mb-4">Securely connect your public or private GitHub repository in seconds using a token.</p>
+              <div className="w-full h-1 bg-yellow-400 rounded"></div>
+            </div>
           </div>
 
-          {/* Step 2: AI-Powered Scan */}
-          <div className="text-center">
-            <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-6 border border-gray-700 mb-6">
-              <img 
-                src="/lovable-uploads/cde97e5e-c1d5-4c12-9e46-f2e2ea4ff588.png" 
-                alt="AI Scanning Process"
-                className="w-full h-16 mx-auto object-contain"
-              />
+          {/* Step 2 */}
+          <div className="flex items-start gap-6 p-6 bg-black border border-white/10 rounded-2xl hover:border-yellow-400/50 transition-all">
+            <div className="w-16 h-16 bg-black border border-white/20 rounded-full flex items-center justify-center flex-shrink-0">
+              <div className="w-6 h-6 bg-white rounded-sm"></div>
             </div>
-            <div className="inline-flex items-center px-3 py-1 bg-yellow-500/20 rounded-full mb-4">
-              <span className="text-yellow-400 text-sm font-medium">STEP 2</span>
+            <div className="flex-1">
+              <h3 className="text-xl font-bold text-white mb-2">Run an AI-Powered Scan</h3>
+              <p className="text-gray-400 mb-4">We analyze your code using static analysis and AI to detect exposed secrets, insecure patterns, and known vulnerabilities.</p>
+              <div className="w-full h-1 bg-yellow-400 rounded"></div>
             </div>
-            <h3 className="text-xl font-bold mb-2 text-white">AI-Powered Scan</h3>
-            <p className="text-gray-400">
-              Our AI analyzes your codebase for real vulnerabilities, not false positives. Get results in minutes.
-            </p>
           </div>
 
-          {/* Step 3: Get Your Report */}
-          <div className="text-center">
-            <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-6 border border-gray-700 mb-6 flex items-center justify-center">
-              <div className="text-4xl">📊</div>
+          {/* Step 3 */}
+          <div className="flex items-start gap-6 p-6 bg-black border border-white/10 rounded-2xl hover:border-yellow-400/50 transition-all">
+            <div className="w-16 h-16 bg-black border border-white/20 rounded-full flex items-center justify-center flex-shrink-0">
+              <div className="w-6 h-6 bg-white rounded-sm"></div>
             </div>
-            <div className="inline-flex items-center px-3 py-1 bg-yellow-500/20 rounded-full mb-4">
-              <span className="text-yellow-400 text-sm font-medium">STEP 3</span>
+            <div className="flex-1">
+              <h3 className="text-xl font-bold text-white mb-2">Get an Instant Report</h3>
+              <p className="text-gray-400 mb-4">Download a detailed security report with risk levels and fix instructions — built for developers, not compliance officers.</p>
+              <div className="w-full h-1 bg-yellow-400 rounded"></div>
             </div>
-            <h3 className="text-xl font-bold mb-2 text-white">Get Your Report</h3>
-            <p className="text-gray-400">
-              Receive a detailed, actionable report with clear explanations and fix recommendations.
-            </p>
           </div>
         </div>
       </div>
