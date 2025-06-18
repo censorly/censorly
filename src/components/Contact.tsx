@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -35,7 +34,7 @@ const Contact = () => {
                   <Input 
                     id="name"
                     placeholder="David Johnson"
-                    className="bg-transparent border-0 border-b border-white/30 rounded-none text-white placeholder-gray-500 focus:border-white focus:ring-0 focus:ring-offset-0 focus-visible:ring-0 focus-visible:ring-offset-0 px-0 py-3 transition-colors duration-200"
+                    className="bg-transparent border-0 border-b border-white/30 rounded-none text-white placeholder-gray-500 focus:border-white focus:outline-none focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0 px-0 py-3 transition-colors duration-200"
                   />
                 </div>
                 <div className="space-y-2">
@@ -44,7 +43,7 @@ const Contact = () => {
                     id="email"
                     type="email"
                     placeholder="example@mail.com"
-                    className="bg-transparent border-0 border-b border-white/30 rounded-none text-white placeholder-gray-500 focus:border-white focus:ring-0 focus:ring-offset-0 focus-visible:ring-0 focus-visible:ring-offset-0 px-0 py-3 transition-colors duration-200"
+                    className="bg-transparent border-0 border-b border-white/30 rounded-none text-white placeholder-gray-500 focus:border-white focus:outline-none focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0 px-0 py-3 transition-colors duration-200"
                   />
                 </div>
               </div>
@@ -54,7 +53,7 @@ const Contact = () => {
                 <Input 
                   id="project"
                   placeholder="Ex: Promptique"
-                  className="bg-transparent border-0 border-b border-white/30 rounded-none text-white placeholder-gray-500 focus:border-white focus:ring-0 focus:ring-offset-0 focus-visible:ring-0 focus-visible:ring-offset-0 px-0 py-3 transition-colors duration-200"
+                  className="bg-transparent border-0 border-b border-white/30 rounded-none text-white placeholder-gray-500 focus:border-white focus:outline-none focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0 px-0 py-3 transition-colors duration-200"
                 />
               </div>
 
@@ -95,7 +94,7 @@ const Contact = () => {
                   id="details"
                   rows={4}
                   placeholder="Let us know what you're working on or how we can help."
-                  className="bg-transparent border-0 border-b border-white/30 rounded-none text-white placeholder-gray-500 focus:border-white focus:ring-0 focus:ring-offset-0 focus-visible:ring-0 focus-visible:ring-offset-0 px-0 py-3 resize-none transition-colors duration-200"
+                  className="bg-transparent border-0 border-b border-white/30 rounded-none text-white placeholder-gray-500 focus:border-white focus:outline-none focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0 px-0 py-3 resize-none transition-colors duration-200"
                 />
               </div>
 
