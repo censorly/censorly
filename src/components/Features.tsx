@@ -90,9 +90,9 @@ const Features = () => {
               <div className="bg-black rounded-2xl p-8">
                 <div className="aspect-square bg-black rounded-lg flex items-center justify-center relative overflow-hidden">
                   <img 
-                    src="/lovable-uploads/26ea5041-8925-4176-b641-dba8fa534fa7.png" 
-                    alt="Transformative Solutions"
-                    className="w-full h-full object-cover rounded-lg grayscale brightness-110 contrast-125 saturate-0 filter drop-shadow-[0_0_20px_rgba(255,255,255,0.3)]"
+                    src="/lovable-uploads/c6733283-1b8b-4d1a-ab8b-58d8018851a4.png" 
+                    alt="Metallic Security Design"
+                    className="w-full h-full object-cover rounded-lg opacity-80 filter brightness-110 contrast-125"
                   />
                 </div>
               </div>
