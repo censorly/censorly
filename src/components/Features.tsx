@@ -1,4 +1,3 @@
-
 const Features = () => {
   const steps = [
     {
@@ -77,7 +76,7 @@ const Features = () => {
               <div className="space-y-6">
                 <div className="shine-effect rounded-2xl p-6 border border-gray-600">
                   <div className="flex items-center space-x-3 mb-3">
-                    <div className="w-10 h-10 flex items-center justify-center">
+                    <div className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center">
                       <img 
                         src="/lovable-uploads/ad6f60c2-388b-4548-b4d4-a34ee2b7d7dd.png" 
                         alt="Connect GitHub Repo" 
@@ -93,7 +92,7 @@ const Features = () => {
 
                 <div className="shine-effect rounded-2xl p-6 border border-gray-600">
                   <div className="flex items-center space-x-3 mb-3">
-                    <div className="w-10 h-10 flex items-center justify-center">
+                    <div className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center">
                       <img 
                         src="/lovable-uploads/11dd4044-3e1b-401a-9726-eb38e139a4b2.png" 
                         alt="AI-Powered Scan" 
@@ -109,7 +108,7 @@ const Features = () => {
 
                 <div className="shine-effect rounded-2xl p-6 border border-gray-600">
                   <div className="flex items-center space-x-3 mb-3">
-                    <div className="w-10 h-10 flex items-center justify-center">
+                    <div className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center">
                       <img 
                         src="/lovable-uploads/468111a1-3a56-484e-b838-4afe9c9f3646.png" 
                         alt="Security Report" 
@@ -125,7 +124,7 @@ const Features = () => {
 
                 <div className="shine-effect rounded-2xl p-6 border border-gray-600">
                   <div className="flex items-center space-x-3 mb-3">
-                    <div className="w-10 h-10 flex items-center justify-center">
+                    <div className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center">
                       <img 
                         src="/lovable-uploads/37dc48d1-baba-41ac-8403-0bbd17f841d3.png" 
                         alt="One-Click Fix" 
