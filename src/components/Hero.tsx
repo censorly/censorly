@@ -21,39 +21,34 @@ const Hero = () => {
         />
       </div>
       
-      <div className="container mx-auto px-6 text-center z-30 relative">
-        {/* AI Badge - clean without blur */}
-        <div className="inline-flex items-center px-4 py-2 bg-black/20 border border-white/30 rounded-full mb-8 shiny-border animate-fade-in">
-          <div className="w-2 h-2 bg-white rounded-full mr-2 animate-pulse shadow-[0_0_10px_rgba(255,255,255,0.8)]"></div>
-          <span className="text-sm text-white glow-text">🛡️ Powered by AI Security Intelligence</span>
+      <div className="container mx-auto px-6 text-center relative z-10">
+        {/* AI Badge */}
+        <div className="inline-flex items-center px-4 py-2 bg-black/50 border border-white/30 rounded-full mb-8">
+          <div className="w-2 h-2 bg-white rounded-full mr-2 animate-pulse"></div>
+          <span className="text-sm text-white">🛡️ Powered by AI Security Intelligence</span>
         </div>
 
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in glow-text">
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white">
           Find and Fix Code{" "}
-          <span className="bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent shine-effect font-bold">
+          <span className="text-white font-bold">
             Vulnerabilities
           </span>{" "}
           Instantly!
         </h1>
 
-        <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto animate-fade-in">
+        <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
           VibeSec scans your codebase{" "}
-          <span className="text-white glow-text">using AI and Semgrep</span>{" "}
+          <span className="text-white">using AI and Semgrep</span>{" "}
           to uncover real security issues before they ship. Public or private repo? You're covered.
         </p>
 
         <Button 
           size="lg" 
-          className="shine-effect text-white hover:bg-white/10 px-8 py-4 text-lg rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] animate-fade-in shiny-border glow-text"
+          className="bg-white text-black hover:bg-gray-200 px-8 py-4 text-lg rounded-lg transition-all duration-300 transform hover:scale-105"
         >
           🔥 Scan My Code
         </Button>
       </div>
-
-      {/* Floating shiny elements */}
-      <div className="absolute top-20 left-10 w-20 h-20 shine-effect rounded-full animate-pulse shadow-[0_0_20px_rgba(255,255,255,0.2)]"></div>
-      <div className="absolute bottom-20 right-10 w-32 h-32 shine-effect rounded-full animate-pulse shadow-[0_0_30px_rgba(255,255,255,0.2)]"></div>
-      <div className="absolute top-1/2 left-5 w-16 h-16 shine-effect rounded-full animate-pulse shadow-[0_0_25px_rgba(255,255,255,0.2)]"></div>
     </section>
   );
 };
