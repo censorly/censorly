@@ -15,7 +15,8 @@ const About = () => {
               className="w-full h-full rounded-lg"
               style={{ 
                 border: 'none',
-                background: 'transparent'
+                background: 'transparent',
+                pointerEvents: 'none'
               }}
             />
           </div>
