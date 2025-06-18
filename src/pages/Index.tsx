@@ -12,15 +12,18 @@ import Footer from "@/components/Footer";
 const Index = () => {
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
-      <Header />
-      <Hero />
-      <About />
-      <HowItWorks />
-      <Features />
-      <Developers />
-      <Contact />
-      <FAQ />
-      <Footer />
+      <div className="absolute inset-0 bg-gradient-to-b from-black via-black to-black"></div>
+      <div className="relative z-10">
+        <Header />
+        <Hero />
+        <About />
+        <HowItWorks />
+        <Features />
+        <Developers />
+        <Contact />
+        <FAQ />
+        <Footer />
+      </div>
     </div>
   );
 };
