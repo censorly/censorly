@@ -60,7 +60,7 @@ const Developers = () => {
               {features.map((feature, index) => (
                 <div 
                   key={index}
-                  className="group p-8 bg-black border-l-2 border-r-2 border-t-2 border-white/60 hover:border-white/80 transition-all duration-300 hover:transform hover:scale-105 relative overflow-hidden rounded-t-lg"
+                  className="group p-8 bg-black border-l-2 border-r-2 border-t-2 border-white/60 hover:border-white/80 transition-all duration-300 hover:transform hover:scale-105 relative overflow-hidden rounded-t-lg shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]"
                 >
                   <div className="text-center">
                     <div className="flex justify-center mb-4 text-white">
