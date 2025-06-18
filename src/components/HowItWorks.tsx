@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 
 const HowItWorks = () => {
@@ -26,18 +25,16 @@ const HowItWorks = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           {/* GitHub Integration Section */}
           <div className="relative">
-            <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-gray-700">
-              <div className="aspect-video bg-gray-800 rounded-lg flex flex-col items-center justify-center relative overflow-hidden p-8">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20"></div>
-                
-                {/* GitHub icon */}
-                <div className="relative z-10">
-                  <img 
-                    src="/lovable-uploads/4a14155f-b17a-4c36-b9ea-574374841b43.png" 
-                    alt="GitHub Logo"
-                    className="w-32 h-32 object-contain"
-                  />
-                </div>
+            <div className="aspect-video rounded-lg flex flex-col items-center justify-center relative overflow-hidden p-8">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20"></div>
+              
+              {/* GitHub icon */}
+              <div className="relative z-10">
+                <img 
+                  src="/lovable-uploads/4a14155f-b17a-4c36-b9ea-574374841b43.png" 
+                  alt="GitHub Logo"
+                  className="w-32 h-32 object-contain"
+                />
               </div>
             </div>
           </div>
