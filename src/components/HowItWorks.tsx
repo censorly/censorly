@@ -70,6 +70,59 @@ const HowItWorks = () => {
             and clear next steps. Here's how we help you build safer software fast.
           </p>
         </div>
+
+        {/* Steps Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Step 1: Connect Your Repo */}
+          <div className="text-center">
+            <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-6 border border-gray-700 mb-6">
+              <img 
+                src="/lovable-uploads/346f46e2-19cc-4f97-8b12-e017c99198a7.png" 
+                alt="GitHub Logo"
+                className="w-16 h-16 mx-auto object-contain"
+              />
+            </div>
+            <div className="inline-flex items-center px-3 py-1 bg-yellow-500/20 rounded-full mb-4">
+              <span className="text-yellow-400 text-sm font-medium">STEP 1</span>
+            </div>
+            <h3 className="text-xl font-bold mb-2 text-white">Connect Your Repo</h3>
+            <p className="text-gray-400">
+              Simply connect your GitHub repository using your token. Works with both public and private repos.
+            </p>
+          </div>
+
+          {/* Step 2: AI-Powered Scan */}
+          <div className="text-center">
+            <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-6 border border-gray-700 mb-6">
+              <img 
+                src="/lovable-uploads/cde97e5e-c1d5-4c12-9e46-f2e2ea4ff588.png" 
+                alt="AI Scanning Process"
+                className="w-full h-16 mx-auto object-contain"
+              />
+            </div>
+            <div className="inline-flex items-center px-3 py-1 bg-yellow-500/20 rounded-full mb-4">
+              <span className="text-yellow-400 text-sm font-medium">STEP 2</span>
+            </div>
+            <h3 className="text-xl font-bold mb-2 text-white">AI-Powered Scan</h3>
+            <p className="text-gray-400">
+              Our AI analyzes your codebase for real vulnerabilities, not false positives. Get results in minutes.
+            </p>
+          </div>
+
+          {/* Step 3: Get Your Report */}
+          <div className="text-center">
+            <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-6 border border-gray-700 mb-6 flex items-center justify-center">
+              <div className="text-4xl">📊</div>
+            </div>
+            <div className="inline-flex items-center px-3 py-1 bg-yellow-500/20 rounded-full mb-4">
+              <span className="text-yellow-400 text-sm font-medium">STEP 3</span>
+            </div>
+            <h3 className="text-xl font-bold mb-2 text-white">Get Your Report</h3>
+            <p className="text-gray-400">
+              Receive a detailed, actionable report with clear explanations and fix recommendations.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
