@@ -57,35 +57,25 @@ const FAQ = () => {
         <div className="max-w-3xl mx-auto">
           <div className="space-y-4">
             {faqs.map((faq, index) => (
-              <Accordion key={index} type="single" collapsible>
-                <AccordionItem 
-                  value={`item-${index}`}
-                  className="border border-gray-700 rounded-lg px-6 bg-black/40 data-[state=open]:border-gray-600"
-                >
-                  <AccordionTrigger className="text-left text-white hover:text-gray-300 py-6 [&>svg]:hidden">
-                    <div className="flex items-center justify-between w-full">
-                      <span className="text-lg font-medium">{faq.question}</span>
-                      <Plus className="h-6 w-6 shrink-0 transition-transform duration-200 group-data-[state=open]/trigger:rotate-45" />
-                    </div>
-                  </AccordionTrigger>
-                  <AccordionContent className="text-gray-400 pb-6 pt-0">
-                    {faq.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              </Accordion>
+              <div key={index} className="border border-gray-700 rounded-lg bg-black/40">
+                <Accordion type="single" collapsible>
+                  <AccordionItem 
+                    value={`item-${index}`}
+                    className="border-none"
+                  >
+                    <AccordionTrigger className="text-left text-white hover:text-gray-300 px-6 py-6 [&>svg]:hidden">
+                      <div className="flex items-center justify-between w-full">
+                        <span className="text-lg font-medium">{faq.question}</span>
+                        <Plus className="h-6 w-6 shrink-0 transition-transform duration-200 group-data-[state=open]/trigger:rotate-45" />
+                      </div>
+                    </AccordionTrigger>
+                    <AccordionContent className="text-gray-400 px-6 pb-6 pt-0">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+              </div>
             ))}
-          </div>
-        </div>
-
-        {/* Bottom Section */}
-        <div className="text-center mt-20 max-w-3xl mx-auto">
-          <div className="bg-gradient-to-r from-blue-900/20 to-purple-900/20 rounded-2xl p-12 border border-gray-800">
-            <p className="text-xl text-gray-300 mb-8">
-              Built for devs. Backed by security. VibeSec helps you ship secure code without slowing down.
-            </p>
-            <div className="w-full h-64 bg-gradient-to-br from-blue-600/20 to-purple-600/20 rounded-lg flex items-center justify-center">
-              <div className="text-8xl opacity-50">🌐</div>
-            </div>
           </div>
         </div>
       </div>
