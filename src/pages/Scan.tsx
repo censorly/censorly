@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -24,6 +24,7 @@ const Scan = () => {
   const [scanResults, setScanResults] = useState<Finding[] | null>(null);
   const [error, setError] = useState<string | null>(null);
   const navigate = useNavigate();
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   const scanRepoForVulns = async (repoUrl: string) => {
     setIsScanning(true);
@@ -173,6 +174,10 @@ const Scan = () => {
     }
   };
 
+  const handleUploadClick = () => {
+    fileInputRef.current?.click();
+  };
+
   return (
     <div className="min-h-screen bg-black text-white relative overflow-hidden">
       {/* Background effect similar to Hero */}
@@ -258,19 +263,21 @@ const Scan = () => {
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="border-2 border-dashed border-white/30 rounded-lg p-8 text-center hover:border-white/50 transition-all duration-300 glass-effect">
+                  <div 
+                    className="border-2 border-dashed border-white/30 rounded-lg p-8 text-center hover:border-white/50 transition-all duration-300 glass-effect cursor-pointer"
+                    onClick={handleUploadClick}
+                  >
                     <Upload className="mx-auto h-12 w-12 text-gray-300 mb-4 animate-pulse" />
-                    <label className="cursor-pointer">
-                      <span className="text-lg text-gray-300 hover:text-white glow-text transition-all duration-200">
-                        Click to upload or drag and drop
-                      </span>
-                      <input
-                        type="file"
-                        accept=".zip"
-                        onChange={handleFileUpload}
-                        className="hidden"
-                      />
-                    </label>
+                    <span className="text-lg text-gray-300 hover:text-white glow-text transition-all duration-200">
+                      Click to upload or drag and drop
+                    </span>
+                    <input
+                      ref={fileInputRef}
+                      type="file"
+                      accept=".zip"
+                      onChange={handleFileUpload}
+                      className="hidden"
+                    />
                     <p className="text-sm text-gray-400 mt-2">ZIP files up to 50MB</p>
                   </div>
                   {isScanning && (
