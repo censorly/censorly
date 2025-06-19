@@ -97,23 +97,6 @@ This project uses Tailwind CSS for styling with custom animations and effects:
 - `npm run preview` - Preview production build locally
 - `npm run lint` - Run ESLint
 
-## 🚀 Deployment
-
-### Deploy with Lovable
-
-1. Open your [Lovable project](https://lovable.dev)
-2. Click on **Share** → **Publish**
-3. Your app will be deployed instantly
-
-### Deploy to Other Platforms
-
-Since this is a standard React application, you can deploy it to:
-- Vercel
-- Netlify
-- GitHub Pages
-- AWS S3 + CloudFront
-- Any static hosting service
-
 ## 🤝 Contributing
 
 1. Fork the repository
@@ -131,5 +114,3 @@ For questions or support, reach out to us at: **help@censorly.app**
 This project is proprietary software. All rights reserved.
 
 ---
-
-Built with ❤️ using [Lovable](https://lovable.dev) - The AI-powered web development platform
