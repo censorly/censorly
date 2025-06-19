@@ -1,11 +1,9 @@
 
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -63,20 +61,13 @@ const Header = () => {
             >
               FAQ
             </button>
-            <button 
-              onClick={() => scrollToSection('contact')}
-              className="text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-200 px-3 py-1 rounded cursor-pointer"
-            >
-              CONTACT
-            </button>
           </div>
 
           <Button 
             variant="outline" 
-            onClick={() => navigate('/scan')}
             className="shine-effect text-white hover:bg-white/10 hover:glow-text transition-all duration-200 shiny-border"
           >
-            Scan My Code
+            Contact
           </Button>
         </nav>
       </div>
