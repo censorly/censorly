@@ -1,4 +1,3 @@
-
 import {
   Accordion,
   AccordionContent,
@@ -10,12 +9,12 @@ import { Plus } from "lucide-react";
 const FAQ = () => {
   const faqs = [
     {
-      question: "How does VibeSec scan my code?",
-      answer: "VibeSec uses a combination of static analysis tools like Semgrep and AI-powered vulnerability detection to scan your codebase for security issues, exposed secrets, and known vulnerabilities."
+      question: "How does Censorly scan my code?",
+      answer: "Censorly uses a combination of static analysis tools like Semgrep and AI-powered vulnerability detection to scan your codebase for security issues, exposed secrets, and known vulnerabilities."
     },
     {
       question: "Do you support private repositories?",
-      answer: "Yes! VibeSec supports both public and private GitHub repositories. Simply connect using your GitHub token and we'll securely scan your private repos."
+      answer: "Yes! Censorly supports both public and private GitHub repositories. Simply connect using your GitHub token and we'll securely scan your private repos."
     },
     {
       question: "What do I get in the Basic plan?",
@@ -26,8 +25,8 @@ const FAQ = () => {
       answer: "Our AI-generated reports include detailed vulnerability descriptions, risk levels, potential impact analysis, and step-by-step fix instructions written for developers, not compliance officers."
     },
     {
-      question: "Can VibeSec automatically fix code?",
-      answer: "Currently, VibeSec provides detailed reports with fix instructions. Our Pro tier (coming soon) will include one-click automatic fixes for common vulnerabilities."
+      question: "Can Censorly automatically fix code?",
+      answer: "Currently, Censorly provides detailed reports with fix instructions. Our Pro tier (coming soon) will include one-click automatic fixes for common vulnerabilities."
     },
     {
       question: "How secure is my data?",

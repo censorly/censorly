@@ -41,7 +41,7 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-medium mb-4">Social Media</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">X</a></li>
+              <li><a href="https://x.com/censorlyapp" className="text-gray-400 hover:text-white transition-colors">X</a></li>
             </ul>
           </div>
         </div>
