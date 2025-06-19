@@ -2,7 +2,6 @@
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Scan } from "lucide-react";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -24,10 +23,6 @@ const Header = () => {
         block: 'start'
       });
     }
-  };
-
-  const handleScanClick = () => {
-    navigate('/scan');
   };
 
   return (
@@ -75,15 +70,6 @@ const Header = () => {
               CONTACT
             </button>
           </div>
-
-          <Button 
-            onClick={handleScanClick}
-            variant="outline" 
-            className="shine-effect text-white hover:bg-white/10 hover:glow-text transition-all duration-200 shiny-border flex items-center gap-2"
-          >
-            <Scan className="w-4 h-4" />
-            Scan My Code
-          </Button>
         </nav>
       </div>
     </header>
