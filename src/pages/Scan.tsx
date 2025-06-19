@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -46,7 +45,7 @@ const Scan = () => {
           <Button 
             variant="ghost" 
             onClick={() => navigate("/")}
-            className="text-gray-300 hover:text-white hover:bg-white/10 mr-4 shine-effect shiny-border"
+            className="text-gray-300 hover:text-white hover:bg-white/10 mr-4 shiny-border"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Home
@@ -81,7 +80,7 @@ const Scan = () => {
               </TabsTrigger>
             </TabsList>
 
-            <TabsContent value="github" className="animate-fade-in">
+            <TabsContent value="github" className="animate-fade-in transition-all duration-500 ease-out">
               <Card className="glass-effect border border-white/20 backdrop-blur-sm shiny-border">
                 <CardHeader>
                   <CardTitle className="text-white glow-text">Scan GitHub Repository</CardTitle>
@@ -110,7 +109,7 @@ const Scan = () => {
               </Card>
             </TabsContent>
 
-            <TabsContent value="upload" className="animate-fade-in">
+            <TabsContent value="upload" className="animate-fade-in transition-all duration-500 ease-out">
               <Card className="glass-effect border border-white/20 backdrop-blur-sm shiny-border">
                 <CardHeader>
                   <CardTitle className="text-white glow-text">Upload Zip File</CardTitle>
