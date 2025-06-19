@@ -17,7 +17,7 @@ const Footer = () => {
       </div>
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="grid md:grid-cols-4 gap-8 mb-12">
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
           <div>
             <h3 className="text-white font-semibold mb-4">Censorly</h3>
             <p className="text-gray-400 text-sm mb-4">
@@ -41,17 +41,7 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-medium mb-4">Social Media</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">LinkedIn</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">X</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-white font-medium mb-4">Resources</h4>
-            <ul className="space-y-2 text-sm">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Documentation</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">API Reference</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Community</a></li>
             </ul>
           </div>
         </div>
