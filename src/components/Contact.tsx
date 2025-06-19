@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -37,7 +36,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-20 relative">
+    <section id="contact" className="py-20 relative">
       <div className="max-w-4xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <div className="inline-flex items-center px-3 py-1 glass-effect rounded-full mb-6 shiny-border">

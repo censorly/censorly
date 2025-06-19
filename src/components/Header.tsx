@@ -66,6 +66,7 @@ const Header = () => {
           <Button 
             variant="outline" 
             className="shine-effect text-white hover:bg-white/10 hover:glow-text transition-all duration-200 shiny-border"
+            onClick={() => scrollToSection('contact')}
           >
             Contact
           </Button>
