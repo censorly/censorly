@@ -64,7 +64,7 @@ const Scan = () => {
           </div>
 
           <Tabs defaultValue="github" className="w-full">
-            <TabsList className="grid w-full grid-cols-2 mb-8 glass-effect border border-white/20 shiny-border">
+            <TabsList className="grid w-full grid-cols-2 mb-8 glass-effect border border-white/20">
               <TabsTrigger 
                 value="github" 
                 className="data-[state=active]:glass-effect data-[state=active]:text-white text-gray-400 glow-text transition-all duration-300"
