@@ -52,7 +52,7 @@ const Developers = () => {
             </h2>
             
             <p className="text-xl text-gray-300 max-w-4xl mx-auto mb-12">
-              VibeSec integrates directly into your development workflow to catch vulnerabilities early. 
+              Censorly integrates directly into your development workflow to catch vulnerabilities early. 
               Scan repos, get actionable insights, and ship confidently no security team required.
             </p>
 
@@ -80,7 +80,7 @@ const Developers = () => {
           {/* Community Section */}
           <div className="text-center">
             <h3 className="text-2xl font-bold mb-4">
-              Join 100+ developers already using VibeSec to secure their codebase.
+              Join 100+ developers already using Censorly to secure their codebase.
             </h3>
             
             <Button 

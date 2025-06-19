@@ -34,7 +34,7 @@ const Hero = () => {
         </h1>
 
         <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto animate-fade-in">
-          VibeSec scans your codebase{" "}
+          Censorly scans your codebase{" "}
           <span className="text-white glow-text">using AI and Semgrep</span>{" "}
           to uncover real security issues before they ship. Public or private repo? You're covered.
         </p>

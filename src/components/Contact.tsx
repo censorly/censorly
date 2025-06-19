@@ -46,7 +46,7 @@ const Contact = () => {
           
           <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ textShadow: '0 0 20px rgba(255,255,255,0.6), 0 0 40px rgba(255,255,255,0.4)' }}>
             Get in Touch With the{" "}
-            <span className="text-gray-400">VibeSec Team</span>
+            <span className="text-gray-400">Censorly Team</span>
           </h2>
           
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">

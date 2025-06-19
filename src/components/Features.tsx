@@ -10,7 +10,7 @@ const Features = () => {
           <div className="text-center mb-16">
             <div className="inline-flex items-center px-3 py-1 glass-effect rounded-full mb-6 shiny-border">
               <span className="w-2 h-2 bg-white rounded-full mr-2 shadow-[0_0_10px_rgba(255,255,255,0.8)]"></span>
-              <span className="text-white text-sm font-medium glow-text">WHY VIBESEC</span>
+              <span className="text-white text-sm font-medium glow-text">WHY CENSORLY</span>
             </div>
             
             <h2 className="text-4xl font-bold mb-6" style={{ textShadow: '0 0 20px rgba(255,255,255,0.6), 0 0 40px rgba(255,255,255,0.4)' }}>
@@ -81,7 +81,7 @@ const Features = () => {
                   <h4 className="text-lg font-semibold" style={{ textShadow: '0 0 20px rgba(255,255,255,0.6), 0 0 40px rgba(255,255,255,0.4)' }}>FUTURE: One-Click Fix (Pro Tier)</h4>
                 </div>
                 <p className="text-gray-400">
-                  Upgrade to VibeSec Pro and automatically patch common vulnerabilities with a single click.
+                  Upgrade to Censorly Pro and automatically patch common vulnerabilities with a single click.
                 </p>
               </div>
             </div>

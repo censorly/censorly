@@ -31,9 +31,9 @@ const Header = () => {
         <nav className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <div className="w-8 h-8 shine-effect rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-sm glow-text">V</span>
+              <span className="text-white font-bold text-sm glow-text">C</span>
             </div>
-            <span className="text-xl font-semibold glow-text">VibeSec</span>
+            <span className="text-xl font-semibold glow-text">Censorly</span>
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
@@ -47,7 +47,7 @@ const Header = () => {
               onClick={() => scrollToSection('why-vibesec')}
               className="text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-200 px-3 py-1 rounded cursor-pointer"
             >
-              WHY VIBESEC
+              WHY CENSORLY
             </button>
             <button 
               onClick={() => scrollToSection('developers')}

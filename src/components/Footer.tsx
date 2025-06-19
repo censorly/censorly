@@ -19,12 +19,12 @@ const Footer = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div>
-            <h3 className="text-white font-semibold mb-4">VibeSec</h3>
+            <h3 className="text-white font-semibold mb-4">Censorly</h3>
             <p className="text-gray-400 text-sm mb-4">
-              help@vibesec.app ↗
+              help@censorly.app ↗
             </p>
             <p className="text-gray-400 text-xs">
-              © 2025 VibeSec. All rights reserved.
+              © 2025 Censorly. All rights reserved.
             </p>
           </div>
 
@@ -32,7 +32,7 @@ const Footer = () => {
             <h4 className="text-white font-medium mb-4">Links</h4>
             <ul className="space-y-2 text-sm">
               <li><a href="#how-it-works" className="text-gray-400 hover:text-white transition-colors">HOW IT WORKS</a></li>
-              <li><a href="#why-vibesec" className="text-gray-400 hover:text-white transition-colors">WHY VIBESEC</a></li>
+              <li><a href="#why-vibesec" className="text-gray-400 hover:text-white transition-colors">WHY CENSORLY</a></li>
               <li><a href="#developers" className="text-gray-400 hover:text-white transition-colors">FOR DEVELOPERS</a></li>
               <li><a href="#faq" className="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
             </ul>

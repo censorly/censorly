@@ -1,5 +1,4 @@
 
-
 const About = () => {
   return (
     <section className="py-20 relative bg-black overflow-hidden" id="why-vibesec">
@@ -32,7 +31,7 @@ const About = () => {
           </h2>
           
           <p className="text-white text-lg md:text-xl font-bold leading-relaxed max-w-4xl mx-auto mb-16 glow-text">
-            VibeSec is an AI-native platform that scans your code for real vulnerabilities, not false alarms. 
+            Censorly is an AI-native platform that scans your code for real vulnerabilities, not false alarms. 
             We help developers catch critical issues before they ship so you can move fast without breaking things.
           </p>
         </div>
@@ -52,7 +51,7 @@ const About = () => {
               <div>
                 <h3 className="text-xl font-semibold mb-4 text-white glow-text">Real Vulnerability Scanning</h3>
                 <p className="text-gray-400 leading-relaxed">
-                  We don't just lint your code we audit it. VibeSec runs smart scans tailored to your stack, 
+                  We don't just lint your code we audit it. Censorly runs smart scans tailored to your stack, 
                   uncovering high-risk vulnerabilities with surgical precision.
                 </p>
               </div>
@@ -105,4 +104,3 @@ const About = () => {
 };
 
 export default About;
-
