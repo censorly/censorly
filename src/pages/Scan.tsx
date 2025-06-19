@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -6,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Upload, Github, ArrowLeft, AlertTriangle, CheckCircle } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import JSZip from "jszip";
 
 interface Vulnerability {
   id: string;
@@ -88,15 +88,88 @@ const Scan = () => {
     }
   };
 
+  const scanZipFileForVulns = async (zipFile: File) => {
+    setIsScanning(true);
+    setError(null);
+    setScanResults(null);
+
+    try {
+      const zip = new JSZip();
+      const zipContents = await zip.loadAsync(zipFile);
+      
+      // Look for package.json in the zip file
+      const packageJsonFile = zipContents.file("package.json") || 
+                             zipContents.file(/.*\/package\.json$/)[0];
+      
+      if (!packageJsonFile) {
+        throw new Error("No package.json found in the uploaded zip file");
+      }
+
+      const packageJsonContent = await packageJsonFile.async("text");
+      const pkg = JSON.parse(packageJsonContent);
+      const dependencies = pkg.dependencies || {};
+
+      if (Object.keys(dependencies).length === 0) {
+        setError("No dependencies found to scan.");
+        setIsScanning(false);
+        return;
+      }
+
+      // Scan each dependency using OSV.dev (same logic as GitHub scanning)
+      let findings: Finding[] = [];
+      for (const [name, version] of Object.entries(dependencies)) {
+        const osvRes = await fetch("https://api.osv.dev/v1/query", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            version: (version as string).replace(/[^0-9.]/g, ""),
+            package: {
+              name: name,
+              ecosystem: "npm"
+            }
+          })
+        });
+
+        const osvData = await osvRes.json();
+        if (osvData.vulns && osvData.vulns.length > 0) {
+          findings.push({
+            package: name,
+            version: version as string,
+            vulns: osvData.vulns.map((v: any) => ({
+              id: v.id,
+              summary: v.summary
+            }))
+          });
+        }
+      }
+
+      setScanResults(findings);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "An error occurred during scanning");
+    } finally {
+      setIsScanning(false);
+    }
+  };
+
   const handleGithubScan = async () => {
     if (!githubUrl) return;
     await scanRepoForVulns(githubUrl);
   };
 
-  const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleFileUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
     if (file) {
-      setError("File upload scanning is not yet implemented. Please use GitHub URL scanning for now.");
+      if (!file.name.endsWith('.zip')) {
+        setError("Please upload a .zip file");
+        return;
+      }
+      
+      if (file.size > 50 * 1024 * 1024) { // 50MB limit
+        setError("File size must be less than 50MB");
+        return;
+      }
+
+      await scanZipFileForVulns(file);
     }
   };
 
