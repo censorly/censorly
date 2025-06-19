@@ -102,7 +102,7 @@ const Scan = () => {
                   <Button 
                     onClick={handleGithubScan}
                     disabled={!githubUrl || isScanning}
-                    className="w-full shine-effect glass-effect border border-white/20 text-white hover:bg-white/20 hover:border-white/40 transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] shiny-border glow-text"
+                    className="w-full glass-effect border border-white/20 text-white hover:bg-white/20 hover:border-white/40 transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] shiny-border glow-text"
                   >
                     {isScanning ? "🔍 Scanning..." : "🔍 Scan Repository"}
                   </Button>
