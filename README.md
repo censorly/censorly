@@ -1,73 +1,135 @@
-# Welcome to your Lovable project
 
-## Project info
+# Censorly
 
-**URL**: https://lovable.dev/projects/cb092e31-9d90-4e06-9ed2-1112145e2001
+🛡️ **AI-Powered Code Security Scanner**
 
-## How can I edit this code?
+Censorly is a cutting-edge web application that helps developers find and fix code vulnerabilities instantly using AI and Semgrep integration. Whether you're working with public or private repositories, Censorly has you covered.
 
-There are several ways of editing your application.
+## 🚀 Features
 
-**Use Lovable**
+- **AI-Powered Security Intelligence** - Advanced vulnerability detection using artificial intelligence
+- **Semgrep Integration** - Industry-standard static analysis for comprehensive code scanning
+- **Real-time Scanning** - Instant analysis of your codebase
+- **Public & Private Repo Support** - Scan any repository regardless of visibility
+- **Modern UI** - Beautiful, responsive interface built with React and Tailwind CSS
+- **Interactive 3D Elements** - Engaging user experience with Spline 3D backgrounds
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/cb092e31-9d90-4e06-9ed2-1112145e2001) and start prompting.
+## 🛠️ Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Frontend**: React 18 with TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Routing**: React Router DOM
+- **State Management**: TanStack Query
+- **Icons**: Lucide React
+- **Charts**: Recharts
 
-**Use your preferred IDE**
+## 📋 Prerequisites
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Before you begin, ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- npm or yarn package manager
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🚀 Quick Start
 
-Follow these steps:
+### 1. Clone the repository
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+```bash
 git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
 cd <YOUR_PROJECT_NAME>
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 2. Install dependencies
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+npm install
+```
+
+### 3. Start the development server
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:5173`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🏗️ Build for Production
 
-**Use GitHub Codespaces**
+```bash
+npm run build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+The built files will be in the `dist` directory.
 
-## What technologies are used for this project?
+## 📁 Project Structure
 
-This project is built with:
+```
+src/
+├── components/          # Reusable UI components
+│   ├── ui/             # shadcn/ui components
+│   ├── Header.tsx      # Navigation header
+│   ├── Hero.tsx        # Landing page hero section
+│   ├── Footer.tsx      # Site footer
+│   └── ...
+├── pages/              # Page components
+│   ├── Index.tsx       # Home page
+│   ├── Scan.tsx        # Code scanning page
+│   └── NotFound.tsx    # 404 page
+├── hooks/              # Custom React hooks
+├── lib/                # Utility functions
+└── App.tsx             # Main application component
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🎨 Styling
 
-## How can I deploy this project?
+This project uses Tailwind CSS for styling with custom animations and effects:
 
-Simply open [Lovable](https://lovable.dev/projects/cb092e31-9d90-4e06-9ed2-1112145e2001) and click on Share -> Publish.
+- **Glass effects** for modern UI elements
+- **Glow effects** for enhanced visual appeal
+- **Responsive design** for all screen sizes
+- **Custom animations** for smooth interactions
 
-## Can I connect a custom domain to my Lovable project?
+## 🔧 Available Scripts
 
-Yes, you can!
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🚀 Deployment
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+### Deploy with Lovable
+
+1. Open your [Lovable project](https://lovable.dev)
+2. Click on **Share** → **Publish**
+3. Your app will be deployed instantly
+
+### Deploy to Other Platforms
+
+Since this is a standard React application, you can deploy it to:
+- Vercel
+- Netlify
+- GitHub Pages
+- AWS S3 + CloudFront
+- Any static hosting service
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📞 Contact
+
+For questions or support, reach out to us at: **help@censorly.app**
+
+## 📄 License
+
+This project is proprietary software. All rights reserved.
+
+---
+
+Built with ❤️ using [Lovable](https://lovable.dev) - The AI-powered web development platform
