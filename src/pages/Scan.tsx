@@ -4,33 +4,99 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Upload, Github, ArrowLeft } from "lucide-react";
+import { Upload, Github, ArrowLeft, AlertTriangle, CheckCircle } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+
+interface Vulnerability {
+  id: string;
+  summary: string;
+}
+
+interface Finding {
+  package: string;
+  version: string;
+  vulns: Vulnerability[];
+}
 
 const Scan = () => {
   const [githubUrl, setGithubUrl] = useState("");
   const [isScanning, setIsScanning] = useState(false);
+  const [scanResults, setScanResults] = useState<Finding[] | null>(null);
+  const [error, setError] = useState<string | null>(null);
   const navigate = useNavigate();
+
+  const scanRepoForVulns = async (repoUrl: string) => {
+    setIsScanning(true);
+    setError(null);
+    setScanResults(null);
+
+    try {
+      // 1. Parse GitHub repo path
+      const match = repoUrl.match(/github\.com\/([^\/]+)\/([^\/]+)/);
+      if (!match) throw new Error("Invalid GitHub URL");
+
+      const [_, owner, repo] = match;
+
+      // 2. Get package.json contents
+      const res = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/package.json`);
+      if (!res.ok) throw new Error("package.json not found or repository is private");
+      const data = await res.json();
+
+      const decoded = atob(data.content);
+      const pkg = JSON.parse(decoded);
+      const dependencies = pkg.dependencies || {};
+
+      if (Object.keys(dependencies).length === 0) {
+        setError("No dependencies found to scan.");
+        setIsScanning(false);
+        return;
+      }
+
+      // 3. Scan each dependency using OSV.dev
+      let findings: Finding[] = [];
+      for (const [name, version] of Object.entries(dependencies)) {
+        const osvRes = await fetch("https://api.osv.dev/v1/query", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            version: (version as string).replace(/[^0-9.]/g, ""),
+            package: {
+              name: name,
+              ecosystem: "npm"
+            }
+          })
+        });
+
+        const osvData = await osvRes.json();
+        if (osvData.vulns && osvData.vulns.length > 0) {
+          findings.push({
+            package: name,
+            version: version as string,
+            vulns: osvData.vulns.map((v: any) => ({
+              id: v.id,
+              summary: v.summary
+            }))
+          });
+        }
+      }
+
+      setScanResults(findings);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "An error occurred during scanning");
+    } finally {
+      setIsScanning(false);
+    }
+  };
 
   const handleGithubScan = async () => {
     if (!githubUrl) return;
-    setIsScanning(true);
-    // Simulate scanning process
-    setTimeout(() => {
-      setIsScanning(false);
-      console.log("Scanning GitHub repo:", githubUrl);
-    }, 2000);
+    await scanRepoForVulns(githubUrl);
   };
 
   const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
     if (file) {
-      setIsScanning(true);
-      // Simulate file processing
-      setTimeout(() => {
-        setIsScanning(false);
-        console.log("Processing file:", file.name);
-      }, 2000);
+      setError("File upload scanning is not yet implemented. Please use GitHub URL scanning for now.");
     }
   };
 
@@ -146,6 +212,58 @@ const Scan = () => {
               </Card>
             </TabsContent>
           </Tabs>
+
+          {/* Results Section */}
+          {(scanResults !== null || error) && (
+            <div className="mt-8">
+              <Card className="glass-effect border border-white/20 backdrop-blur-sm">
+                <CardHeader>
+                  <CardTitle className="text-white glow-text flex items-center">
+                    {error ? (
+                      <>
+                        <AlertTriangle className="w-5 h-5 mr-2 text-red-400" />
+                        Scan Error
+                      </>
+                    ) : scanResults && scanResults.length > 0 ? (
+                      <>
+                        <AlertTriangle className="w-5 h-5 mr-2 text-yellow-400" />
+                        Vulnerabilities Found
+                      </>
+                    ) : (
+                      <>
+                        <CheckCircle className="w-5 h-5 mr-2 text-green-400" />
+                        Scan Complete
+                      </>
+                    )}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  {error ? (
+                    <div className="text-red-400 glow-text">{error}</div>
+                  ) : scanResults && scanResults.length > 0 ? (
+                    <div className="space-y-4">
+                      {scanResults.map((finding, index) => (
+                        <div key={index} className="border border-yellow-400/30 rounded-lg p-4 glass-effect">
+                          <h4 className="text-yellow-400 font-bold mb-2 glow-text">
+                            {finding.package}@{finding.version}
+                          </h4>
+                          <ul className="space-y-2">
+                            {finding.vulns.map((vuln, vIndex) => (
+                              <li key={vIndex} className="text-gray-300">
+                                <span className="text-red-400 font-mono">{vuln.id}</span>: {vuln.summary}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <div className="text-green-400 glow-text">✅ No known vulnerabilities found!</div>
+                  )}
+                </CardContent>
+              </Card>
+            </div>
+          )}
 
           <div className="mt-8 text-center">
             <div className="inline-flex items-center px-4 py-2 glass-effect rounded-full border border-white/20">
