@@ -81,7 +81,7 @@ const Scan = () => {
               </TabsTrigger>
             </TabsList>
 
-            <TabsContent value="github">
+            <TabsContent value="github" className="animate-fade-in">
               <Card className="glass-effect border border-white/20 backdrop-blur-sm shiny-border">
                 <CardHeader>
                   <CardTitle className="text-white glow-text">Scan GitHub Repository</CardTitle>
@@ -110,7 +110,7 @@ const Scan = () => {
               </Card>
             </TabsContent>
 
-            <TabsContent value="upload">
+            <TabsContent value="upload" className="animate-fade-in">
               <Card className="glass-effect border border-white/20 backdrop-blur-sm shiny-border">
                 <CardHeader>
                   <CardTitle className="text-white glow-text">Upload Zip File</CardTitle>
