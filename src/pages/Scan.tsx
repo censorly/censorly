@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -45,7 +46,7 @@ const Scan = () => {
           <Button 
             variant="ghost" 
             onClick={() => navigate("/")}
-            className="text-gray-300 hover:text-white hover:bg-white/10 mr-4 shiny-border"
+            className="text-gray-300 hover:text-white hover:bg-white/10 mr-4"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Home
@@ -81,7 +82,7 @@ const Scan = () => {
             </TabsList>
 
             <TabsContent value="github" className="animate-fade-in transition-all duration-500 ease-out">
-              <Card className="glass-effect border border-white/20 backdrop-blur-sm shiny-border">
+              <Card className="glass-effect border border-white/20 backdrop-blur-sm">
                 <CardHeader>
                   <CardTitle className="text-white glow-text">Scan GitHub Repository</CardTitle>
                   <CardDescription className="text-gray-300">
@@ -101,7 +102,7 @@ const Scan = () => {
                   <Button 
                     onClick={handleGithubScan}
                     disabled={!githubUrl || isScanning}
-                    className="w-full glass-effect border border-white/20 text-white hover:bg-white/20 hover:border-white/40 transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] shiny-border glow-text"
+                    className="w-full glass-effect border border-white/20 text-white hover:bg-white/20 hover:border-white/40 transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] glow-text"
                   >
                     {isScanning ? "🔍 Scanning..." : "🔍 Scan Repository"}
                   </Button>
@@ -110,7 +111,7 @@ const Scan = () => {
             </TabsContent>
 
             <TabsContent value="upload" className="animate-fade-in transition-all duration-500 ease-out">
-              <Card className="glass-effect border border-white/20 backdrop-blur-sm shiny-border">
+              <Card className="glass-effect border border-white/20 backdrop-blur-sm">
                 <CardHeader>
                   <CardTitle className="text-white glow-text">Upload Zip File</CardTitle>
                   <CardDescription className="text-gray-300">
@@ -118,7 +119,7 @@ const Scan = () => {
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="border-2 border-dashed border-white/30 rounded-lg p-8 text-center hover:border-white/50 transition-all duration-300 glass-effect shiny-border">
+                  <div className="border-2 border-dashed border-white/30 rounded-lg p-8 text-center hover:border-white/50 transition-all duration-300 glass-effect">
                     <Upload className="mx-auto h-12 w-12 text-gray-300 mb-4 animate-pulse" />
                     <label className="cursor-pointer">
                       <span className="text-lg text-gray-300 hover:text-white glow-text transition-all duration-200">
@@ -134,7 +135,7 @@ const Scan = () => {
                     <p className="text-sm text-gray-400 mt-2">ZIP files up to 50MB</p>
                   </div>
                   {isScanning && (
-                    <div className="text-center glass-effect border border-white/20 rounded-lg p-4 shiny-border">
+                    <div className="text-center glass-effect border border-white/20 rounded-lg p-4">
                       <div className="text-white glow-text mb-2">🔄 Processing your code...</div>
                       <div className="w-full bg-white/20 rounded-full h-2">
                         <div className="bg-white h-2 rounded-full animate-pulse w-1/2 shadow-[0_0_10px_rgba(255,255,255,0.8)]"></div>
