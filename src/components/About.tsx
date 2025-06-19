@@ -26,7 +26,10 @@ const About = () => {
             <span className="text-white text-sm font-medium glow-text">About us</span>
           </div>
           
-          <span data-text-fill="true" style="background-image:linear-gradient(0deg, rgb(41, 41, 41) 0%, rgb(255, 255, 255) 84.3844%)" class="framer-text">Building the Future of Secure AI Development</span>
+          <h2 className="text-4xl md:text-6xl font-bold mb-8 glow-text">
+            Building the Future of{" "}
+            <span className="text-white glow-text">Secure AI Development</span>
+          </h2>
           
           <p className="text-white text-lg md:text-xl font-bold leading-relaxed max-w-4xl mx-auto mb-16 glow-text">
             VibeSec is an AI-native platform that scans your code for real vulnerabilities, not false alarms. 
