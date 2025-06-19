@@ -39,23 +39,13 @@ const Hero = () => {
           to uncover real security issues before they ship. Public or private repo? You're covered.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button 
-            size="lg" 
-            onClick={() => navigate("/scan")}
-            className="shine-effect bg-black border border-gray-600 text-white hover:bg-white/10 hover:border-gray-500 px-8 py-4 text-lg rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] animate-fade-in shiny-border glow-text"
-          >
-            🔥 Scan My Code
-          </Button>
-          
-          <Button 
-            size="lg" 
-            onClick={() => navigate("/scan")}
-            className="shine-effect bg-white text-black hover:bg-gray-100 px-8 py-4 text-lg rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] animate-fade-in font-semibold"
-          >
-            Start Free Trial
-          </Button>
-        </div>
+        <Button 
+          size="lg" 
+          onClick={() => navigate("/scan")}
+          className="shine-effect bg-black border border-gray-600 text-white hover:bg-white/10 hover:border-gray-500 px-8 py-4 text-lg rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] animate-fade-in shiny-border glow-text"
+        >
+          🔥 Scan My Code
+        </Button>
       </div>
     </section>
   );
