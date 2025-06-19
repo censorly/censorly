@@ -1,7 +1,10 @@
 
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-black">
       {/* Spline 3D Background */}
@@ -38,6 +41,7 @@ const Hero = () => {
 
         <Button 
           size="lg" 
+          onClick={() => navigate("/scan")}
           className="shine-effect bg-black border border-gray-600 text-white hover:bg-white/10 hover:border-gray-500 px-8 py-4 text-lg rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] animate-fade-in shiny-border glow-text"
         >
           🔥 Scan My Code
