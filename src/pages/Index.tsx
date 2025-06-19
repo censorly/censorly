@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
@@ -15,7 +14,7 @@ const Index = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-black via-black to-black"></div>
       
       {/* Blur reveal effect at bottom */}
-      <div className="fixed bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black/80 to-transparent backdrop-blur-sm z-40 pointer-events-none"></div>
+      <div className="fixed bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-black/80 to-transparent backdrop-blur-sm z-40 pointer-events-none"></div>
       
       <div className="relative z-10">
         <Header />
