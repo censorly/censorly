@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 
@@ -30,8 +29,12 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <nav className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 shine-effect rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-sm glow-text">C</span>
+            <div className="w-8 h-8 flex items-center justify-center">
+              <img 
+                src="/lovable-uploads/c568ffda-2a0e-4149-ae5c-1884b91e04de.png" 
+                alt="Censorly Logo" 
+                className="w-8 h-8 object-contain"
+              />
             </div>
             <span className="text-xl font-semibold glow-text">Censorly</span>
           </div>
