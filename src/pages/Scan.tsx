@@ -57,7 +57,7 @@ const Scan = () => {
         <div className="max-w-4xl mx-auto">
           {/* AI Badge similar to Hero */}
           <div className="flex justify-center mb-8">
-            <div className="inline-flex items-center px-4 py-2 glass-effect rounded-full shiny-border animate-fade-in">
+            <div className="inline-flex items-center px-4 py-2 glass-effect rounded-full animate-fade-in">
               <div className="w-2 h-2 bg-white rounded-full mr-2 animate-pulse shadow-[0_0_10px_rgba(255,255,255,0.8)]"></div>
               <span className="text-sm text-white glow-text">🛡️ AI-Powered Security Analysis</span>
             </div>
@@ -148,7 +148,7 @@ const Scan = () => {
           </Tabs>
 
           <div className="mt-8 text-center">
-            <div className="inline-flex items-center px-4 py-2 glass-effect rounded-full border border-white/20 shiny-border">
+            <div className="inline-flex items-center px-4 py-2 glass-effect rounded-full border border-white/20">
               <span className="text-gray-300 glow-text">🔒 Your code is processed securely and never stored permanently</span>
             </div>
           </div>
