@@ -1,47 +1,47 @@
-import React from 'react';
-import { useNavigate } from "react-router-dom";
+
+import { Button } from "@/components/ui/button";
 
 const Hero = () => {
-  const navigate = useNavigate();
-
-  const handleScanClick = () => {
-    navigate('/scan');
-  };
-
   return (
-    <section className="relative py-24">
-      <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-8 items-center">
-          {/* Left Column - Text Content */}
-          <div className="text-center md:text-left">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 glow-text">
-              Secure Your Code with VibeSec
-            </h1>
-            <p className="text-lg text-gray-300 mb-8">
-              Effortlessly scan your code for vulnerabilities and protect your
-              applications from potential threats.
-            </p>
-            <button 
-              onClick={handleScanClick}
-              className="group relative inline-flex items-center gap-3 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shine-effect"
-            >
-              <div className="flex items-center gap-3">
-                <span className="text-2xl">🔥</span>
-                <span className="text-lg">Scan My Code</span>
-              </div>
-              <div className="absolute inset-0 rounded-full bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </button>
-          </div>
-
-          {/* Right Column - Image */}
-          <div className="relative">
-            <img
-              src="/hero-image.png"
-              alt="Code Scanning Illustration"
-              className="rounded-lg shadow-xl hero-image-animation"
-            />
-          </div>
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-black">
+      {/* Spline 3D Background */}
+      <div className="absolute inset-0 w-full h-full">
+        <iframe 
+          src='https://my.spline.design/legendarywaves-CJXL3X56ODDzD7rkaRRqiPht/' 
+          frameBorder='0' 
+          width='100%' 
+          height='100%'
+          className="absolute inset-0 pointer-events-none"
+        />
+      </div>
+      
+      <div className="max-w-4xl mx-auto px-6 text-center z-10 relative">
+        {/* AI Badge */}
+        <div className="inline-flex items-center px-4 py-2 glass-effect rounded-full mb-8 shiny-border animate-fade-in">
+          <div className="w-2 h-2 bg-white rounded-full mr-2 animate-pulse shadow-[0_0_10px_rgba(255,255,255,0.8)]"></div>
+          <span className="text-sm text-white glow-text">🛡️ Powered by AI Security Intelligence</span>
         </div>
+
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in glow-text">
+          Find and Fix Code{" "}
+          <span className="bg-gradient-to-r from-white via-gray-300 to-white bg-clip-text text-transparent">
+            Vulnerabilities
+          </span>{" "}
+          Instantly!
+        </h1>
+
+        <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto animate-fade-in">
+          VibeSec scans your codebase{" "}
+          <span className="text-white glow-text">using AI and Semgrep</span>{" "}
+          to uncover real security issues before they ship. Public or private repo? You're covered.
+        </p>
+
+        <Button 
+          size="lg" 
+          className="shine-effect bg-black border border-gray-600 text-white hover:bg-white/10 hover:border-gray-500 px-8 py-4 text-lg rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] animate-fade-in shiny-border glow-text"
+        >
+          🔥 Scan My Code
+        </Button>
       </div>
     </section>
   );
