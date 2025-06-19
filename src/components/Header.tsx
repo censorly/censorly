@@ -1,9 +1,11 @@
 
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -65,9 +67,10 @@ const Header = () => {
 
           <Button 
             variant="outline" 
+            onClick={() => navigate('/scan')}
             className="shine-effect text-white hover:bg-white/10 hover:glow-text transition-all duration-200 shiny-border"
           >
-            Contact
+            Scan My Code
           </Button>
         </nav>
       </div>
