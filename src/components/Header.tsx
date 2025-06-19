@@ -63,6 +63,12 @@ const Header = () => {
             >
               FAQ
             </button>
+            <button 
+              onClick={() => scrollToSection('contact')}
+              className="text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-200 px-3 py-1 rounded cursor-pointer"
+            >
+              CONTACT
+            </button>
           </div>
 
           <Button 
