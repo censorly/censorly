@@ -1,5 +1,4 @@
 
-import { Button } from "@/components/ui/button";
 import { Lock, Zap, Brain, Wrench, Shield, Code } from "lucide-react";
 
 const Developers = () => {
@@ -82,14 +81,6 @@ const Developers = () => {
             <h3 className="text-2xl font-bold mb-4">
               Join 100+ developers already using Censorly to secure their codebase.
             </h3>
-            
-            <Button 
-              size="lg" 
-              variant="outline"
-              className="shine-effect bg-black border border-gray-600 text-white hover:bg-white/10 hover:text-white hover:border-gray-500 rounded-full transition-all duration-300 transform hover:scale-105"
-            >
-              Start Free Trial ↗
-            </Button>
           </div>
         </div>
       </div>
